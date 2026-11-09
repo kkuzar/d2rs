@@ -6,6 +6,7 @@ set -eu
 cd "$(dirname "$0")/.."
 out=crates/d2s/data
 if [ -n "${D2RS_DATA_SRC:-}" ]; then
+	mkdir -p "$out"
 	cp "$D2RS_DATA_SRC"/*.tsv "$D2RS_DATA_SRC"/counts.rs "$out"/
 	echo "copied the tables from $D2RS_DATA_SRC"
 	exit 0
