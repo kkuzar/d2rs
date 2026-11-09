@@ -1,0 +1,16 @@
+name: Feature request
+description: Ask for a new function in d2rs.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: What do you want to do?
+      description: Describe the task that you cannot do now.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: Describe the change that you want. Say if it is for the Windows app, the web version or the CLI.

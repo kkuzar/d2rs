@@ -1,0 +1,84 @@
+name: pages
+# Builds the browser version (WASM) and publishes it to https://kkuzar.github.io/d2rs/
+# once the private test suite reports `private-tests` = success on the head of main.
+on:
+  status:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  statuses: read
+
+concurrency:   # runs that cannot deploy get their own group, so they never cancel a queued deploy
+  group: ${{ (github.event_name == 'workflow_dispatch' || (github.event.context == 'private-tests' && github.event.state == 'success' && contains(github.event.branches.*.name, 'main'))) && 'pages' || format('pages-noop-{0}', github.run_id) }}
+  cancel-in-progress: false
+
+jobs:
+  gate:
+    if: github.event_name == 'workflow_dispatch' || (github.event.context == 'private-tests' && github.event.state == 'success')
+    runs-on: ubuntu-latest
+    outputs:
+      sha: ${{ steps.g.outputs.sha }}
+    steps:
+      - id: g
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SHA: ${{ github.event.sha || github.sha }}
+        run: |
+          r=${{ github.repository }}
+          if [ "${{ github.event_name }}" = status ] && [ "$(gh api "repos/$r/commits/main" -q .sha)" != "$SHA" ]; then
+            echo "$SHA is not the head of main: nothing to deploy"; exit 0
+          fi
+          s=$(gh api "repos/$r/commits/$SHA/status" -q '.statuses[] | select(.context == "private-tests") | .state')
+          [ "$s" = success ] || { echo "private-tests is '${s:-missing}' on $SHA: not deploying"; exit 1; }
+          echo "sha=$SHA" >> "$GITHUB_OUTPUT"
+
+  build:
+    needs: gate
+    if: needs.gate.outputs.sha != ''
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.gate.outputs.sha }}
+          lfs: true
+      - uses: actions/checkout@v4
+        with:
+          repository: kkuzar/d2rs_test
+          token: ${{ secrets.D2RS_DATA_TOKEN }}
+          path: private
+          sparse-checkout: data
+      - run: sh tools/make_data.sh
+        env:
+          D2RS_DATA_SRC: private/data
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: wasm32-unknown-unknown
+      - uses: Swatinem/rust-cache@v2
+      - name: Install trunk 0.22.0 (pinned checksum)
+        run: |
+          v=0.22.0; f=trunk-x86_64-unknown-linux-gnu.tar.gz
+          curl -sSfLO "https://github.com/trunk-rs/trunk/releases/download/v$v/$f"
+          echo "f78c1989240c56592d8cfc4df5cc27399a3ff66a3f9cc819e16f1e3d809ce7c2  $f" | sha256sum -c -
+          mkdir -p "$HOME/.local/bin" && tar -xzf "$f" -C "$HOME/.local/bin" && echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+      - run: cargo fetch --locked
+      - run: trunk build --release
+        working-directory: app
+      - run: mkdir -p _site && cp site/index.html app/icons/icon.png _site/ && cp -R app/dist _site/app
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    if: github.ref == 'refs/heads/main' && !github.event.repository.private
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v5

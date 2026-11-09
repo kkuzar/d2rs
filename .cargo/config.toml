@@ -1,0 +1,3 @@
+# Keep local builds gentle on the dev machine (see goal_log.md section 4).
+[build]
+jobs = 4
