@@ -41,8 +41,9 @@ pub fn readonly() -> Option<String> {
     })
 }
 
+/// Why item generation is off; also when no item tables are loaded (no game folder picked).
 pub fn gen_off() -> Option<String> {
-    CUR.with_borrow(|a| a.gen_off.clone())
+    CUR.with_borrow(|a| a.gen_off.clone()).or_else(|| ItemTables::get().uniques.is_empty().then(|| "no game folder: pick it (its MPQ files) for item names and to create, reroll or import items".into()))
 }
 
 /// Refuses a write while the mode is read-only.
@@ -84,10 +85,18 @@ pub fn adapt(game: Option<&Path>, save_dir: Option<&Path>, bytes: Option<&[u8]>)
     let mut a = Adapt { mode: Mode::Vanilla, gen_off: None, game: game.map(Path::to_path_buf), #[cfg(not(target_arch = "wasm32"))] exe, inv: None, setup };
     let bad: Vec<_> = a.setup.tables.iter().filter(|t| t.txt == TableState::Modified || t.bin == TableState::Modified).collect();
     let unloadable: Vec<_> = bad.iter().filter(|t| t.txt != TableState::Modified).map(|t| t.name).collect();
-    if let (Some(g), false) = (game, bad.is_empty()) {
+    if let Some(g) = game {
         let gd = GameData::from_install(g).unwrap_or_default().with_override(DataDir::new(g));
         let m = MergedTbl(["patchstring", "expansionstring", "string"].iter().filter_map(|n| Tbl::parse(&gd.read(&format!("data\\local\\lng\\eng\\{n}.tbl"))?).ok()).collect());
         let tbl = |k: &str| m.get(k).map(String::from);
+        if bad.is_empty() {
+            // vanilla: the item tables (uniques, sets, affixes, runewords, ...) come from the game folder
+            if let Err(e) = ItemTables::from_txt(|n| read(&gd, n), tbl).map(ItemTables::set_active) && ItemTables::get().uniques.is_empty() {
+                a.gen_off = Some(format!("the game folder's item tables do not load: {e}"));
+            }
+            CUR.set(a.clone());
+            return a;
+        }
         a.inv = read(&gd, "Inventory");
         let (fmt, gen_bad): (Vec<_>, Vec<_>) = unloadable.iter().partition(|n| FORMAT.contains(n));
         let why = |names: &[&&str], what: &str| format!("{} changed only as compiled .bin, which d2rs cannot read{what}", names.iter().map(|n| **n).collect::<Vec<_>>().join(", "));

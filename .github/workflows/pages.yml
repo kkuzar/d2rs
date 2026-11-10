@@ -42,15 +42,6 @@ jobs:
         with:
           ref: ${{ needs.gate.outputs.sha }}
           lfs: true
-      - uses: actions/checkout@v4
-        with:
-          repository: kkuzar/d2rs_test
-          token: ${{ secrets.D2RS_DATA_TOKEN }}
-          path: private
-          sparse-checkout: data
-      - run: sh tools/make_data.sh
-        env:
-          D2RS_DATA_SRC: private/data
       - uses: dtolnay/rust-toolchain@stable
         with:
           targets: wasm32-unknown-unknown

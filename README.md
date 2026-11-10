@@ -23,23 +23,18 @@ d2rs edits `.d2s` character saves and PlugY stash files (`.d2x`, `.sss`). It nev
 
 d2rs refuses to write while the game runs, because the game overwrites the save file at Save & Exit. The project is feature complete, and it includes item generation and the seed map. Website: <https://kkuzar.github.io/d2rs/>
 
-## Before you build: your own game files
+## Pick your game folder: everything works much better with it
 
-d2rs does not contain the game's data tables. Building from source reads the tables from **your own** game folder and turns them into the data files that the program uses. Without them, the build stops with an error.
+d2rs ships only the core game tables: the save format, base items, item types, skills and experience. The other tables (unique, set, magic and rare names and properties, runewords) come from **your own** 1.14d game folder, which holds the MPQ files (`patch_d2.mpq`, `d2exp.mpq`, `d2data.mpq`). Use "Game folder..." in the program (or `--game dir` / `D2RS_GAME_DIR` for the CLI).
 
-You need:
-
-- your own legal copy of the 1.14d game with the expansion;
-- its game folder, which holds the MPQ files (`patch_d2.mpq`, `d2exp.mpq`, `d2data.mpq`).
-
-Build the tables once, then build the program:
-
-```
-make data D2_GAME_DIR="/path/to/your/game/folder"
-make app
-```
-
-Without `make` (for example on Windows), run `sh tools/make_data.sh "/path/to/your/game/folder"` from Git Bash, then `cargo build --release -p d2rs`. The generated tables are never committed (see `.gitignore`).
+| | Without the game folder | With the game folder |
+|---|---|---|
+| Open, check and save a character or stash | yes | yes |
+| Edit gold, level, experience, stats, skills, quests, waypoints | yes | yes |
+| Move, duplicate and delete items | yes | yes |
+| Item names (unique, set, magic, rare, runeword) | base name only | full names |
+| Create, reroll, import items; trait editor; legit check | no | yes |
+| Item pictures and the map | no | yes |
 
 ## Get d2rs
 
@@ -47,22 +42,25 @@ Without `make` (for example on Windows), run `sh tools/make_data.sh "/path/to/yo
 - **Windows app:** download `d2rs_windows_x64.exe` from [Releases](https://github.com/kkuzar/d2rs/releases) and run it. The file is portable, and it needs no installer.
 - **Source code (any operating system):** install Rust with [rustup](https://rustup.rs), then do one of these procedures.
 
-Procedure A, install with Cargo: not available. `cargo install --git` cannot make the game tables. Use procedure B.
+Procedure A, install with Cargo:
+
+1. If you use Linux, install `libxkbcommon-dev libgtk-3-dev libxcb-render0-dev libxcb-shape0-dev libxcb-xfixes0-dev`.
+2. Run `cargo install --git https://github.com/kkuzar/d2rs --locked d2rs`.
+3. Run `d2rs`. Cargo puts the program in `~/.cargo/bin`.
 
 Procedure B, build from a clone:
 
 1. Install Git LFS (`git lfs install`), then clone the repository. The icon images need it.
 2. If you use Linux, install the packages from procedure A.
-3. Build the game tables first (see "Before you build" above), then run `cargo build --release -p d2rs`.
+3. Run `cargo build --release -p d2rs` (or `make app`).
 4. Run `target/release/d2rs` (`target/release/d2rs.exe` on Windows).
 
 Procedure C, build the web version:
 
-1. Build the game tables first (see "Before you build" above).
-2. Run `rustup target add wasm32-unknown-unknown`.
-3. Run `cargo install trunk --version 0.22.0 --locked`.
-4. Run `cd app && trunk serve`.
-5. Open `http://127.0.0.1:8080/d2rs/app/` in a browser.
+1. Run `rustup target add wasm32-unknown-unknown`.
+2. Run `cargo install trunk --version 0.22.0 --locked`.
+3. Run `cd app && trunk serve` (or `make start`).
+4. Open `http://127.0.0.1:8080/d2rs/app/` in a browser.
 
 ## Use d2rs
 

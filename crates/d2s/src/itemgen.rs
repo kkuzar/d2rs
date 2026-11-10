@@ -289,13 +289,13 @@ pub(crate) fn throwable(typ: &str) -> bool {
 /// An ItemTypes.txt row by code.
 pub(crate) fn itype(code: &str) -> Option<&'static Row<'static>> {
     static T: OnceLock<HashMap<&'static str, Row<'static>>> = OnceLock::new();
-    T.get_or_init(|| rows(include_str!("../data/itemtypes.tsv")).into_iter().map(|r| (txt(&r, "Code"), r)).collect()).get(code)
+    T.get_or_init(|| rows(crate::data::table("itemtypes")).into_iter().map(|r| (txt(&r, "Code"), r)).collect()).get(code)
 }
 
 /// A column of the items table (Weapons, Armor, Misc) for one base.
 fn item_col(code: [u8; 4], col: &str) -> i32 {
     static T: OnceLock<HashMap<String, Row<'static>>> = OnceLock::new();
-    let t = T.get_or_init(|| rows(include_str!("../data/items.tsv")).into_iter().map(|r| (txt(&r, "code").to_string(), r)).collect());
+    let t = T.get_or_init(|| rows(crate::data::table("items")).into_iter().map(|r| (txt(&r, "code").to_string(), r)).collect());
     t.get(String::from_utf8_lossy(&code).trim()).map_or(0, |r| num(r, col))
 }
 

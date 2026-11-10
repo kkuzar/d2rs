@@ -166,7 +166,7 @@ fn is_a(types: &HashMap<&str, [&str; 2]>, t: &str, target: &str, depth: u32) -> 
 }
 
 impl Schema {
-    /// The embedded classic 1.14d tables.
+    /// The core classic 1.14d tables (`crate::data`).
     ///
     /// After `set_active` it returns the swapped-in game tables instead, for every thread (a process-wide `RwLock`
     /// holding a leaked `&'static Schema`; each swap leaks one schema, and swaps are rare). A swap does not affect
@@ -197,9 +197,9 @@ impl Schema {
         static S: OnceLock<Schema> = OnceLock::new();
         S.get_or_init(|| {
             Schema::from_tsv(
-                include_str!("../data/isc.tsv"),
-                include_str!("../data/items.tsv"),
-                include_str!("../data/itemtypes.tsv"),
+                crate::data::table("isc"),
+                crate::data::table("items"),
+                crate::data::table("itemtypes"),
             )
             .unwrap_or_default()
         })
@@ -311,7 +311,7 @@ impl Schema {
 
     /// Rows (of 4 slots) of the belt in `code`, from belts.tsv.
     pub fn belt_rows(&self, code: [u8; 4]) -> u32 {
-        let n = self.base(code).and_then(|b| include_str!("../data/belts.tsv").lines().nth(b.belt as usize + 1)?.split('\t').nth(1)?.parse::<u32>().ok());
+        let n = self.base(code).and_then(|b| crate::data::table("belts").lines().nth(b.belt as usize + 1)?.split('\t').nth(1)?.parse::<u32>().ok());
         n.map_or(1, |n| (n / 4).max(1))
     }
 

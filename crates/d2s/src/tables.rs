@@ -194,25 +194,13 @@ fn numbered(w: &str, i: usize) -> String {
 }
 
 impl ItemTables {
-    /// The embedded 1.14d tables, or after `set_active` the swapped-in ones (process-wide `RwLock` holding a leaked
+    /// The 1.14d tables of `crate::data` (empty without `D2RS_TABLES`), or after `set_active` the swapped-in ones (process-wide `RwLock` holding a leaked
     /// `&'static ItemTables`; each swap leaks one set and swaps are rare; earlier references keep the old set).
     pub fn get() -> &'static ItemTables {
         ACTIVE.read().ok().and_then(|g| *g).unwrap_or_else(|| {
             static T: OnceLock<ItemTables> = OnceLock::new();
             T.get_or_init(|| {
-                Self::build(&|n| match n {
-                    "uniques" => include_str!("../data/uniques.tsv"),
-                    "setitems" => include_str!("../data/setitems.tsv"),
-                    "magicprefix" => include_str!("../data/magicprefix.tsv"),
-                    "magicsuffix" => include_str!("../data/magicsuffix.tsv"),
-                    "automagic" => include_str!("../data/automagic.tsv"),
-                    "rareprefix" => include_str!("../data/rareprefix.tsv"),
-                    "raresuffix" => include_str!("../data/raresuffix.tsv"),
-                    "runes" => include_str!("../data/runes.tsv"),
-                    "properties" => include_str!("../data/properties.tsv"),
-                    "qualityitems" => include_str!("../data/qualityitems.tsv"),
-                    _ => include_str!("../data/lowqualityitems.tsv"),
-                })
+                Self::build(&crate::data::table)
             })
         })
     }

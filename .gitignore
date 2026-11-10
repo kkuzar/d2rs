@@ -29,7 +29,4 @@ dist/
 # Local output of the knowledge-graph tool (not part of the project)
 graphify-out/
 
-# Game tables: generated from your own game folder (see README.md), never committed
-crates/d2s/data/*.tsv
-crates/d2s/data/counts.rs
 __pycache__/

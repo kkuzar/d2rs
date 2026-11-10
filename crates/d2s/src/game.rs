@@ -9,14 +9,14 @@ const CLASS_CODES: [&str; 7] = ["ama", "sor", "nec", "pal", "bar", "dru", "ass"]
 /// The 30 skills of a class in the order the `if` section stores them: (name, required level).
 pub fn class_skills(class: usize) -> Vec<(&'static str, u32)> {
     let code = CLASS_CODES.get(class).copied().unwrap_or("-");
-    let rows = include_str!("../data/skills.tsv").lines().skip(1).map(|l| l.split('\t').collect::<Vec<_>>());
+    let rows = crate::data::table("skills").lines().skip(1).map(|l| l.split('\t').collect::<Vec<_>>());
     rows.filter(|c| c.get(2) == Some(&code)).map(|c| (c[0], c.get(3).and_then(|v| v.parse().ok()).unwrap_or(1))).collect()
 }
 
 fn exp_table() -> &'static [u32] {
     static T: OnceLock<Vec<u32>> = OnceLock::new();
     T.get_or_init(|| {
-        let rows = include_str!("../data/experience.tsv").lines().skip(2);
+        let rows = crate::data::table("experience").lines().skip(2);
         // Row n holds the minimum experience of level n + 1 (row 0 = level 1 = 0).
         rows.filter_map(|l| l.split('\t').nth(1)?.trim().parse().ok()).collect()
     })

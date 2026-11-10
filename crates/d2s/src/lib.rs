@@ -1,6 +1,7 @@
 //! Lossless game save codec (classic and expansion, up to 1.14d).
 
 pub mod bits;
+mod data;
 pub mod edit;
 pub mod game;
 pub mod item;

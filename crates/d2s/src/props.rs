@@ -66,7 +66,7 @@ fn w(s: u32, p: u32, v: i32) -> (i32, Vec<Stat>) {
 fn dam(code: [u8; 4]) -> [i32; 6] {
     static D: OnceLock<HashMap<[u8; 4], [i32; 6]>> = OnceLock::new();
     let d = D.get_or_init(|| {
-        rows(include_str!("../data/items.tsv"))
+        rows(crate::data::table("items"))
             .iter()
             .filter(|r| txt(r, "kind") == "w")
             .map(|r| {
@@ -85,7 +85,7 @@ type Skills = (HashMap<String, i32>, HashMap<i32, i32>, HashMap<i32, &'static st
 fn skills() -> &'static Skills {
     static S: OnceLock<Skills> = OnceLock::new();
     S.get_or_init(|| {
-        let r = rows(include_str!("../data/skills.tsv"));
+        let r = rows(crate::data::table("skills"));
         (r.iter().map(|r| (txt(r, "skillkey").to_lowercase(), num(r, "*Id"))).collect(), r.iter().map(|r| (num(r, "*Id"), num(r, "reqlevel"))).collect(), r.iter().map(|r| (num(r, "*Id"), txt(r, "itypea1"))).collect())
     })
 }

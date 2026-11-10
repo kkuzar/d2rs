@@ -1,4 +1,5 @@
-"""Generate d2rs's compact classic 1.14d data tables (crates/d2s/data/*.tsv).
+"""Generate d2rs's compact classic 1.14d data tables. Commit only the core ones (isc, items, itemtypes, skills,
+experience, belts, hireling, counts.rs) to crates/d2s/core; the full set stays private (D2RS_TABLES).
 
 Usage: python3 -I tools/gen_data.py <excel-dir> [out-dir [strings-dir]]
 <strings-dir> holds string.tsv, expansionstring.tsv, patchstring.tsv (the extract example writes them from the .tbl
@@ -55,7 +56,6 @@ TABLES = {
 # Row counts of tables d2rs does not ship, written to counts.rs: the table index stats (limits::prop_errors) are bounded by them.
 COUNTS = {"STATES": "states", "MONSTATS": "monstats", "MONTYPE": "montype"}
 CLASSIC = {"36": ("8", "0"), "37": ("8", "0"), "39": ("8", "50"), "41": ("8", "50"), "43": ("8", "50"), "45": ("8", "50")}
-SOURCES = sorted({f for files, _ in TABLES.values() for f in files} | {"skilldesc", "itemstatcost"} | set(COUNTS.values()))
 
 
 def strings(d):

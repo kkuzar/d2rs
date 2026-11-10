@@ -3,7 +3,6 @@ use crate::bits::{err, Result};
 use crate::item::{parse_tree, Item, ItemView, Prop, NONE};
 use crate::{Save, Schema};
 use std::sync::atomic::{AtomicU64, Ordering};
-use std::sync::OnceLock;
 
 thread_local!(static BIG_STASH: std::cell::Cell<bool> = const { std::cell::Cell::new(false) });
 
@@ -229,49 +228,30 @@ pub fn duplicate(item: &Item, sch: &Schema) -> Result<Item> {
     Ok(d)
 }
 
-struct Names([Vec<&'static str>; 8]);
-
-fn names() -> &'static Names {
-    static N: OnceLock<Names> = OnceLock::new();
-    N.get_or_init(|| {
-        let col = |s: &'static str, c: usize| s.lines().skip(1).map(|l| l.split('\t').nth(c).unwrap_or("")).collect();
-        Names([
-            col(include_str!("../data/uniques.tsv"), 0),
-            col(include_str!("../data/setitems.tsv"), 0),
-            col(include_str!("../data/magicprefix.tsv"), 0),
-            col(include_str!("../data/magicsuffix.tsv"), 0),
-            col(include_str!("../data/rareprefix.tsv"), 0),
-            col(include_str!("../data/raresuffix.tsv"), 0),
-            col(include_str!("../data/runes.tsv"), 0),
-            col(include_str!("../data/runes.tsv"), 1),
-        ])
-    })
-}
-
-fn pick(l: &[&'static str], i: Option<u32>) -> &'static str {
-    i.and_then(|i| l.get(i as usize)).copied().unwrap_or("")
+fn pick<'a>(mut l: impl Iterator<Item = &'a String>, i: Option<u32>) -> &'a str {
+    i.and_then(|i| l.nth(i as usize)).map_or("", String::as_str)
 }
 
 /// Display name: base name, or the unique/set/runeword/magic/rare name (best effort, never fails).
 pub fn item_name(item: &Item, sch: &Schema) -> String {
     let v = &item.view;
     let base = sch.base(v.code).map_or_else(|| String::from_utf8_lossy(&v.code).trim().to_string(), |b| b.name.clone());
-    let n = names();
+    let t = crate::tables::ItemTables::get();
     let q = |i: usize| v.qual.get(i).copied().filter(|&x| x != NONE);
     let s = match v.quality {
         _ if v.flag(26) => {
             // The low 12 bits of the stored string index: key RunewordN is N + 26 (N + 25 above 75); 2718 is Runeword22.
             let x = match v.runeword & 0xFFF { 2718 => 48, x => x };
             let key = |k: &str| k.strip_prefix("Runeword").and_then(|d| d.parse::<u32>().ok()).is_some_and(|d| d + if d > 75 { 25 } else { 26 } == x);
-            format!("{} {base}", pick(&n.0[7], n.0[6].iter().position(|k| key(k)).map(|j| j as u32)))
+            format!("{} {base}", pick(t.runewords.iter().map(|r| &r.name), t.runewords.iter().position(|r| key(&r.key)).map(|j| j as u32)))
         }
         1 => format!("Crude {base}"),
         3 => format!("Superior {base}"),
-        4 => [pick(&n.0[2], q(0).and_then(|x| x.checked_sub(1))), &base, pick(&n.0[3], q(1).and_then(|x| x.checked_sub(1)))].iter().filter(|x| !x.is_empty()).copied().collect::<Vec<_>>().join(" "),
-        5 => format!("{} {base}", pick(&n.0[1], q(0))),
-        7 => format!("{} {base}", pick(&n.0[0], q(0))),
+        4 => [pick(t.magic_prefix.iter().map(|a| &a.name), q(0).and_then(|x| x.checked_sub(1))), &base, pick(t.magic_suffix.iter().map(|a| &a.name), q(1).and_then(|x| x.checked_sub(1)))].iter().filter(|x| !x.is_empty()).copied().collect::<Vec<_>>().join(" "),
+        5 => format!("{} {base}", pick(t.set_items.iter().map(|a| &a.name), q(0))),
+        7 => format!("{} {base}", pick(t.uniques.iter().map(|a| &a.name), q(0))),
         6 | 8 | 9 => {
-            let nm = |i| q(i).map_or("", |x| if x >= 156 { pick(&n.0[4], Some(x - 156)) } else { pick(&n.0[5], x.checked_sub(1)) });
+            let nm = |i| q(i).map_or("", |x| if x >= 156 { pick(t.rare_prefix.iter().map(|a| &a.name), Some(x - 156)) } else { pick(t.rare_suffix.iter().map(|a| &a.name), x.checked_sub(1)) });
             format!("{} {} {base}", nm(0), nm(1))
         }
         _ => base,
@@ -376,7 +356,7 @@ pub fn slot_ok(sch: &Schema, code: [u8; 4], body: u32) -> bool {
 
 /// Hireling act (1, 2, 3 or 5) of a merc type id (header 0xB9), from hireling.tsv.
 pub fn merc_act(merc_type: u32) -> Option<u32> {
-    include_str!("../data/hireling.tsv").lines().skip(1).map(|l| l.split('\t').collect::<Vec<_>>()).find(|c| c.get(1) == Some(&merc_type.to_string().as_str())).and_then(|c| c.get(3)?.parse().ok())
+    crate::data::table("hireling").lines().skip(1).map(|l| l.split('\t').collect::<Vec<_>>()).find(|c| c.get(1) == Some(&merc_type.to_string().as_str())).and_then(|c| c.get(3)?.parse().ok())
 }
 
 /// Mercenary equipment rules (Arreat Summit "Hirelings"): helm and armor for all (barbarian helms only

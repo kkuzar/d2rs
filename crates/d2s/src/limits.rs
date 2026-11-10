@@ -8,7 +8,7 @@ use std::collections::HashMap;
 use std::ops::RangeInclusive as R;
 use std::sync::OnceLock;
 
-include!("../data/counts.rs");
+include!("../core/counts.rs");
 
 /// `Ok` when `v` is in `r`, else "<what> <v> outside <lo>..=<hi>".
 pub fn check(what: impl std::fmt::Display, v: i64, r: R<i64>) -> Result<(), String> {
@@ -55,7 +55,7 @@ pub fn packed(enc: u32) -> Vec<(&'static str, R<i64>)> {
 /// `MaxSock1`, `MaxSock25`, `MaxSock40` of an item type.
 fn max_sock(typ: &str, ilvl: u32) -> u32 {
     static T: OnceLock<HashMap<&'static str, [u32; 3]>> = OnceLock::new();
-    let t = T.get_or_init(|| rows(include_str!("../data/itemtypes.tsv")).iter().map(|r| (r.get("Code").copied().unwrap_or(""), [num(r, "MaxSock1"), num(r, "MaxSock25"), num(r, "MaxSock40")])).collect());
+    let t = T.get_or_init(|| rows(crate::data::table("itemtypes")).iter().map(|r| (r.get("Code").copied().unwrap_or(""), [num(r, "MaxSock1"), num(r, "MaxSock25"), num(r, "MaxSock40")])).collect());
     t.get(typ).map_or(6, |m| m[usize::from(ilvl > 25) + usize::from(ilvl > 40)])
 }
 

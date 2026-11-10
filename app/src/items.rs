@@ -249,8 +249,8 @@ fn tip(it: &Item, sch: &Schema) -> String {
     if !it.editable {
         s += "\nread-only (failed self-check)";
     }
-    if crate::setup_ui::gen_off().is_some() {
-        return s + "\nLegit check unavailable (mod tables unusable)";
+    if let Some(r) = crate::setup_ui::gen_off() {
+        return s + &format!("\nLegit check unavailable: {r}");
     }
     let f = d2s::legit::check(d2s::tables::ItemTables::get(), sch, it);
     s + &if f.is_empty() { "\nLegit".to_string() } else { format!("\nNot legit: {}", f.join("; ")) }
@@ -807,7 +807,7 @@ impl ItemsUi {
         ui.label("Import (base64)");
         ui.text_edit_singleline(&mut self.import);
         if ui.button("Import").clicked() {
-            match edit::import_item(&self.import, sch).map_err(|e| e.to_string()).and_then(|it| place(save, &mut self.docs, sch, List::Player, it)) {
+            match crate::setup_ui::generation().and_then(|()| edit::import_item(&self.import, sch).map_err(|e| e.to_string())).and_then(|it| place(save, &mut self.docs, sch, List::Player, it)) {
                 Ok(()) => edited = true,
                 Err(e) => self.msg = e,
             }

@@ -72,7 +72,8 @@ fn lost(t: &ItemTables, sch: &Schema, item: &Item) -> Vec<String> {
         (v.quality == 7 && id >= t.uniques.len() && id != 0xFFF, format!("unique id {id} is not a UniqueItems row: the game reads it as none")),
         (v.flag(26) && runeword_row(t, sch, item).is_none(), "no complete Runes row matches its runes, sockets, quality and base: the game deletes it".into()),
     ];
-    let ext = !v.flag(21) && !v.flag(16) && v.sv != 71;
+    // Without item tables (no game folder) items are not checked against them: only unchanged items can be saved then.
+    let ext = !v.flag(21) && !v.flag(16) && v.sv != 71 && !t.uniques.is_empty();
     why.into_iter().filter(|w| ext && w.0).map(|w| w.1).collect()
 }
 
@@ -84,7 +85,7 @@ pub fn load_errors(t: &ItemTables, sch: &Schema, item: &Item) -> Vec<String> {
 /// The findings for one item; empty means legit.
 pub fn check<'a>(t: &'a ItemTables, sch: &Schema, item: &Item) -> Vec<String> {
     let v = &item.view;
-    let Some(b) = sch.base(v.code).filter(|_| !v.flag(21) && !v.flag(16) && v.sv != 71) else { return vec![] };
+    let Some(b) = sch.base(v.code).filter(|_| !v.flag(21) && !v.flag(16) && v.sv != 71 && !t.uniques.is_empty()) else { return vec![] };
     let mut o = lost(t, sch, item);
     let (exp, chain) = (v.version >= 100, type_chain(sch, &b.typ));
     let ctx = Ctx { ilvl: v.ilvl, base: v.code };

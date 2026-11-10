@@ -1,0 +1,660 @@
+kind	code	name	type	type2	invwidth	invheight	invfile	uniqueinvfile	setinvfile	stackable	maxstack	durability	nodurability	quest	compactsave	questdiffcheck	gemsockets	levelreq	reqstr	reqdex	minac	maxac	mindam	maxdam	belt	version	InvTrans	normcode	ubercode	ultracode	level	magic lvl	auto prefix	spawnable	namestr	2handmindam	2handmaxdam	minmisdam	maxmisdam	minstack	spawnstack
+w	hax	Hand Axe	axe		1	3	invhax	invhaxu	invhaxu			28					2	0					3	6	0	0	2	hax	9ha	7ha	3			1	hax						
+w	axe	Axe	axe		2	3	invaxe	invaxeu	invaxeu			24					4	0	32				4	11	0	0	2	axe	9ax	7ax	7			1	axe						
+w	2ax	Double Axe	axe		2	3	inv2ax					24					5	0	43				5	13	0	0	2	2ax	92a	72a	13			1	2ax						
+w	mpi	Military Pick	axe		2	3	invmpi	invmpiu	invmpiu			26					6	0	49	33			7	11	0	0	2	mpi	9mp	7mp	19			1	mpi						
+w	wax	War Axe	axe		2	3	invwax					26					6	0	67				10	18	0	0	2	wax	9wa	7wa	25			1	wax						
+w	lax	Large Axe	axe		2	3	invlax					30					4	0	35						0	0	2	lax	9la	7la	6			1	lax	6	13				
+w	bax	Broad Axe	axe		2	3	invbrx					35					5	0	48						0	0	2	bax	9ba	7ba	12			1	bax	10	18				
+w	btx	Battle Axe	axe		2	3	invbtx	invbtxu	invbtxu			40					5	0	54						0	0	2	btx	9bt	7bt	17			1	btx	12	32				
+w	gax	Great Axe	axe		2	4	invgax	invgaxu	invgaxu			50					6	0	63	39					0	0	2	gax	9ga	7ga	23			1	gax	9	30				
+w	gix	Giant Axe	axe		2	3	invgix					50					6	0	70						0	0	2	gix	9gi	7gi	27			1	gix	22	45				
+w	wnd	Wand	wand		1	2	invwnd	invwndu	invwndu			15					1	0					2	4	0	0	8	wnd	9wn	7wn	2	1		1	wnd						
+w	ywn	Yew Wand	wand		1	2	invywn					15					1	0					2	8	0	0	8	ywn	9yw	7yw	12	1		1	ywn						
+w	bwn	Bone Wand	wand		1	2	invbwn	invbwnu	invbwnu			15					2	0					3	7	0	0	2	bwn	9bw	7bw	18	1		1	bwn						
+w	gwn	Grim Wand	wand		1	2	invgwn					15					2	0					5	11	0	0	2	gwn	9gw	7gw	26	1		1	gwn						
+w	clb	Club	club		1	3	invclb	invclbu	invclbu			24					2	0					1	6	0	0	2	clb	9cl	7cl	1			1	clb						
+w	scp	Scepter	scep		1	3	invscp					50					2	0	25				6	11	0	0	2	scp	9sc	7sc	3			1	scp						
+w	gsc	Grand Scepter	scep		1	3	invgsc					60					3	0	37				8	18	0	0	2	gsc	9qs	7qs	15			1	gsc						
+w	wsp	War Scepter	scep		2	3	invwsp					70					5	0	55				10	17	0	0	2	wsp	9ws	7ws	21			1	wsp						
+w	spc	Spiked Club	club		1	3	invspc	invspcu	invspcu			36					2	0					5	8	0	0	2	spc	9sp	7sp	4			1	spc						
+w	mac	Mace	mace		1	3	invmac					60					2	0	27				3	10	0	0	2	mac	9ma	7ma	8			1	mac						
+w	mst	Morning Star	mace		1	3	invmst	invmstu	invmstu			72					3	0	36				7	16	0	0	2	mst	9mt	7mt	13			1	mst						
+w	fla	Flail	mace		2	3	invfla					30					5	0	41	35			1	24	0	0	2	fla	9fl	7fl	19			1	fla						
+w	whm	War Hammer	hamm		2	3	invwhm					55					4	0	53				19	29	0	0	2	whm	9wh	7wh	25			1	whm						
+w	mau	Maul	hamm		2	4	invmau	invmauu	invmauu			60					6	0	69						0	0	2	mau	9m9	7m7	21			1	mau	30	43				
+w	gma	Great Maul	hamm		2	3	invgma	invgma	invgma			60					6	0	99						0	0	2	gma	9gm	7gm	32			1	gma	38	58				
+w	ssd	Short Sword	swor		1	3	invssd					24					2	0					2	7	0	0	2	ssd	9ss	7ss	1			1	ssd						
+w	scm	Scimitar	swor		1	3	invscm	invscmu	invscmu			22					2	0		21			2	6	0	0	2	scm	9sm	7sm	5			1	scm						
+w	sbr	Sabre	swor		1	3	invsbr	inv9sbu	inv9sbu			32					2	0	25	25			3	8	0	0	2	sbr	9sb	7sb	8			1	sbr						
+w	flc	Falchion	swor		1	3	invflc	invflcu	invflcu			32					2	0	33				9	17	0	0	2	flc	9fc	7fc	11			1	flc						
+w	crs	Crystal Sword	swor		2	3	invcrs	invcrsu	invcrsu			20					6	0	43				5	15	0	0	8	crs	9cr	7cr	11			1	crs						
+w	bsd	Broad Sword	swor		2	3	invbsd	invbsdu	invbsdu			32					4	0	48				7	14	0	0	2	bsd	9bs	7bs	15			1	bsd						
+w	lsd	Long Sword	swor		2	3	invlsd	invlsdu	invlsdu			44					4	0	55	39			3	19	0	0	2	lsd	9ls	7ls	20			1	lsd						
+w	wsd	War Sword	swor		1	3	invwsd					44					3	0	71	45			8	20	0	0	2	wsd	9wd	7wd	27			1	wsd						
+w	2hs	Two-Handed Sword	swor		1	4	inv2hs	inv2hsu	inv2hsu			44					3	0	35	27			2	9	0	0	2	2hs	92h	72h	10			1	2hs	8	17				
+w	clm	Claymore	swor		1	4	invclm					50					4	0	47				5	12	0	0	2	clm	9cm	7cm	17			1	clm	13	30				
+w	gis	Giant Sword	swor		1	4	invgis	invgisu	invgisu			50					4	0	56	34			3	16	0	0	2	gis	9gs	7gs	21			1	gis	9	28				
+w	bsw	Bastard Sword	swor		1	4	invbsw	invbswu	invbswu			40					4	0	62				7	19	0	0	2	bsw	9b9	7b7	24			1	bsw	20	28				
+w	flb	Flamberge	swor		2	4	invflb					50					5	0	70	49			9	15	0	0	2	flb	9fb	7fb	27			1	flb	13	26				
+w	gsd	Great Sword	swor		2	4	invgsd	invgsdu	invgsdu			50					6	0	100	60			12	20	0	0	2	gsd	9gd	7gd	33			1	gsd	25	42				
+w	dgr	Dagger	knif		1	2	invdgr					16					1	0					1	4	0	0	2	dgr	9dg	7dg	3			1	dgr						
+w	dir	Dirk	knif		1	2	invdir					20					1	0		25			3	9	0	0	2	dir	9di	7di	9			1	dir						
+w	kri	Kris	knif		1	3	invkrs	invkrsu	invkrsu			24					3	0		45			2	11	0	0	2	kri	9kr	7kr	17			1	kri						
+w	bld	Blade	knif		1	3	invbld					24					2	0	35	51			4	15	0	0	2	bld	9bl	7bl	23			1	bld						
+w	tkf	Throwing Knife	tkni		1	2	invtkn			1	160	4						0		21			2	3	0	0	2	tkf	9tk	7tk	2			1	tkf			4	9	40	75
+w	tax	Throwing Axe	taxe		1	2	invtax			1	130	6						0		40			4	7	0	0	2	tax	9ta	7ta	7			1	tax			8	12	16	32
+w	bkf	Balanced Knife	tkni		1	2	invbkf			1	160	8						0		51			1	8	0	0	2	bkf	9bk	7bk	13			1	bkf			6	11	30	60
+w	bal	Balanced Axe	taxe		2	3	invbal			1	130	10						0		57			5	10	0	0	2	bal	9b8	7b8	16			1	bal			12	15	16	24
+w	jav	Javelin	jave		1	3	invjav			1	60	2						0					1	5	0	0	8	jav	9ja	7ja	1			1	jav			6	14	30	60
+w	pil	Pilum	jave		1	3	invpil			1	50	3						0		45			4	9	0	0	8	pil	9pi	7pi	10			1	pil			7	20	25	50
+w	ssp	Short Spear	jave		1	3	invssp			1	40	4						0	40	40			2	13	0	0	8	ssp	9s9	7s7	15			1	ssp			10	22	20	40
+w	glv	Glaive	jave		1	4	invglv			1	40	5						0	52	35			5	17	0	0	2	glv	9gl	7gl	23			1	glv			16	22	15	40
+w	tsp	Throwing Spear	jave		1	4	invtsp			1	80	6						0		65			5	15	0	0	2	tsp	9ts	7ts	29			1	tsp			12	30	32	80
+w	spr	Spear	spea		2	4	invspr					30					3	0		20					0	0	8	spr	9sr	7sr	5			1	spr	3	15				
+w	tri	Trident	spea		2	4	invtri	invtriu	invtriu			35					4	0	38	24					0	0	8	tri	9tr	7tr	9			1	tri	9	15				
+w	brn	Brandistock	spea		2	4	invbrn					28					5	0	40	50					0	0	8	brn	9br	7br	16			1	brn	7	17				
+w	spt	Spetum	spea		2	4	invspt					28					6	0	54	35					0	0	8	spt	9st	7st	20			1	spt	15	23				
+w	pik	Pike	spea		2	4	invpik					25					6	0	60	45					0	0	8	pik	9p9	7p7	24			1	pik	14	63				
+w	bar	Bardiche	pole		2	4	invbar					50					3	0	40						0	0	2	bar	9b7	7o7	5			1	bar	1	27				
+w	vou	Voulge	pole		2	4	invvou					50					4	0	50						0	0	2	vou	9vo	7vo	11			1	vou	6	21				
+w	scy	Scythe	pole		2	4	invscy	invscyu	invscyu			65					5	0	41	41					0	0	2	scy	9s8	7s8	15			1	scy	8	20				
+w	pax	Poleaxe	pole		2	4	invpax					65					5	0	62						0	0	2	pax	9pa	7pa	21			1	pax	18	39				
+w	hal	Halberd	pole		2	4	invhal					55					6	0	75	47					0	0	2	hal	9h9	7h7	29			1	hal	12	45				
+w	wsc	War Scythe	pole		2	4	invwsc					55					6	0	80	80					0	0	2	wsc	9wc	7wc	34			1	wsc	15	36				
+w	sst	Short Staff	staf		1	3	invsst					20					2	0							0	0	8	sst	8ss	6ss	1	1		1	sst	1	5				
+w	lst	Long Staff	staf		1	4	invlst					30					3	0							0	0	8	lst	8ls	6ls	8	1		1	lst	2	8				
+w	cst	Gnarled Staff	staf		1	4	invcst	invcstu	invcstu			35					4	0							0	0	8	cst	8cs	6cs	12	1		1	cst	4	12				
+w	bst	Battle Staff	staf		1	4	invbst					40					4	0							0	0	8	bst	8bs	6bs	17	1		1	bst	6	13				
+w	wst	War Staff	staf		2	4	invwst					50					6	0							0	0	8	wst	8ws	6ws	24	1		1	wst	12	28				
+w	sbw	Short Bow	bow		2	3	invsbw					20	1				3	0		15					0	0	8	sbw	8sb	6sb	1			1	sbw	1	4				
+w	hbw	Hunter's Bow	bow		2	3	invhbw					32	1				4	0		28					0	0	8	hbw	8hb	6hb	5			1	hbw	2	6				
+w	lbw	Long Bow	bow		2	4	invlbw					28	1				5	0	22	19					0	0	8	lbw	8lb	6lb	8			1	lbw	3	10				
+w	cbw	Composite Bow	bow		2	3	invcbw	invcbwu	invcbwu			36	1				4	0	25	35					0	0	8	cbw	8cb	6cb	12			1	cbw	4	8				
+w	sbb	Short Battle Bow	bow		2	3	invsbb	invsbbu	invsbbu			40	1				5	0	30	40					0	0	8	sbb	8s8	6s7	18			1	sbb	5	11				
+w	lbb	Long Battle Bow	bow		2	4	invlbb					44	1				6	0	40	50					0	0	8	lbb	8l8	6l7	23			1	lbb	3	18				
+w	swb	Short War Bow	bow		2	3	invswb	invswbu	invswbu			48	1				5	0	35	55					0	0	8	swb	8sw	6sw	27			1	swb	6	14				
+w	lwb	Long War Bow	bow		2	4	invlwb					55	1				6	0	50	65					0	0	8	lwb	8lw	6lw	31			1	lwb	3	23				
+w	lxb	Light Crossbow	xbow		2	3	invlxb	invlxbu	invlxbu			30	1				3	0	21	27					0	0	8	lxb	8lx	6lx	6			1	lxb	6	9				
+w	mxb	Crossbow	xbow		2	3	invmxb	invmxbu	invmxbu			40	1				4	0	40	33					0	0	8	mxb	8mx	6mx	15			1	mxb	9	16				
+w	hxb	Heavy Crossbow	xbow		2	4	invhxb	invhxbu	invhxbu			50	1				6	0	60	40					0	0	8	hxb	8hx	6hx	24			1	hxb	14	26				
+w	rxb	Repeating Crossbow	xbow		2	3	invrxb	invrxbu	invrxbu			40	1				5	0	40	50					0	0	8	rxb	8rx	6rx	33			1	rxb	6	12				
+w	gps	Rancid Gas Potion	tpot		1	1	invgpl			1	25	2	1					24					0	1	0	0	0	gps			32			1	gps					3	6
+w	ops	Oil Potion	tpot		1	1	invopl			1	25	2	1					20					0	1	0	0	0	ops			28			1	ops					3	6
+w	gpm	Choking Gas Potion	tpot		1	1	invgpm			1	25	2	1					16					0	1	0	0	0	gpm			20			1	gpm					3	6
+w	opm	Exploding Potion	tpot		1	1	invopm			1	25	2	1					12					0	1	0	0	0	opm			16			1	opm					3	6
+w	gpl	Strangling Gas Potion	tpot		1	1	invgps			1	25	2	1					6					0	1	0	0	0	gpl			8			1	gpl					3	6
+w	opl	Fulminating Potion	tpot		1	1	invops			1	25	2	1					0					0	1	0	0	0	opl			4			1	opl					3	6
+w	d33	Decoy Gidbinn	knif		1	2	invd33					10		18		1		0	15	20			1	2	0	0	2	d33			0				d33						
+w	g33	The Gidbinn	knif		1	2	invg33					30		18		1		0	15	25			3	7	0	0	2	g33			0				g33						
+w	leg	Wirt's Leg	club		1	3	invleg					66		1		1	3	0					2	8	0	0	8	leg			0				leg						
+w	hdm	Horadric Malus	hamm		1	2	invhmr					55		4		1		0	15	15			6	15	0	0	2	hdm			0				hdm						
+w	hfh	Hell Forge Hammer	hamm		2	3	invhfh					55		25		1	5	0					6	15	0	0	2	hfh			0				hfh						
+w	hst	Horadric Staff	staf		1	4	invhst					50		10		1		0	30						0	0	8	hst			0				hst	12	20				
+w	msf	Shaft of the Horadric Staff	staf		1	3	invmsf					45		10		1		0	25						0	0	8	msf			0				msf	10	15				
+w	9ha	Hatchet	axe		1	3	invhax	invhaxu	invhaxu			28					2	19	25	25			10	21	0	0	2	hax	9ha	7ha	31			1	9ha						
+w	9ax	Cleaver	axe		2	3	invaxe	invaxeu	invaxeu			24					4	22	68				10	33	0	0	2	axe	9ax	7ax	34			1	9ax						
+w	92a	Twin Axe	axe		2	3	inv2ax					24					5	25	85				13	38	0	0	2	2ax	92a	72a	39			1	92a						
+w	9mp	Crowbill	axe		2	3	invmpi	invmpiu	invmpiu			26					6	25	94	70			14	34	0	0	2	mpi	9mp	7mp	43			1	9mp						
+w	9wa	Naga	axe		2	3	invwax					26					6	25	121				16	45	0	0	2	wax	9wa	7wa	48			1	9wa						
+w	9la	Military Axe	axe		2	3	invlax					30					4	22	73						0	0	2	lax	9la	7la	34			1	9la	14	34				
+w	9ba	Bearded Axe	axe		2	3	invbrx					35					5	25	92						0	0	2	bax	9ba	7ba	38			1	9ba	21	49				
+w	9bt	Tabar	axe		2	3	invbtx	inv9btu	inv9btu			40					5	25	101						0	0	2	btx	9bt	7bt	42			1	9bt	24	77				
+w	9ga	Gothic Axe	axe		2	4	invgax	invgaxu	invgaxu			50					6	25	115	79					0	0	2	gax	9ga	7ga	46			1	9ga	18	70				
+w	9gi	Ancient Axe	axe		2	3	invgix	inv9giu	inv9giu			50					6	25	125						0	0	2	gix	9gi	7gi	51			1	9gi	43	85				
+w	9wn	Burnt Wand	wand		1	2	invwnd					15					1	19	25				8	18	0	0	8	wnd	9wn	7wn	31	1		1	9wn						
+w	9yw	Petrified Wand	wand		1	2	invywn					15					2	25	25				8	24	0	0	8	ywn	9yw	7yw	38	1		1	9yw						
+w	9bw	Tomb Wand	wand		1	2	invbwn	invbwnu	invbwnu			15					2	25	25				10	22	0	0	2	bwn	9bw	7bw	43	1		1	9bw						
+w	9gw	Grave Wand	wand		1	2	invgwn	inv9gwu	inv9gwu			15					2	25	25				13	29	0	0	2	gwn	9gw	7gw	49	1		1	9gw						
+w	9cl	Cudgel	club		1	3	invclb	invclbu	invclbu			24					2	18	25				6	21	0	0	2	clb	9cl	7cl	30			1	9cl						
+w	9sc	Rune Scepter	scep		1	3	invscp					50					2	19	58				13	24	0	0	2	scp	9sc	7sc	31			1	9sc						
+w	9qs	Holy Water Sprinkler	scep		1	3	invgsc					60					3	25	76				14	36	0	0	2	gsc	9qs	7qs	40			1	9qs						
+w	9ws	Divine Scepter	scep		2	3	invwsp					70					5	25	103				16	38	0	0	2	wsp	9ws	7ws	45			1	9ws						
+w	9sp	Barbed Club	club		1	3	invspc	invspcu	invspcu			36					3	20	30				13	25	0	0	2	spc	9sp	7sp	32			1	9sp						
+w	9ma	Flanged Mace	mace		1	3	invmac					60					2	23	61				15	23	0	0	2	mac	9ma	7ma	35			1	9ma						
+w	9mt	Jagged Star	mace		1	3	invmst	invmstu	invmstu			72					3	25	74				20	31	0	0	2	mst	9mt	7mt	39			1	9mt						
+w	9fl	Knout	mace		2	3	invfla					30					5	25	82	73			13	35	0	0	2	fla	9fl	7fl	43			1	9fl						
+w	9wh	Battle Hammer	hamm		2	3	invwhm					55					4	25	100				35	58	0	0	2	whm	9wh	7wh	48			1	9wh						
+w	9m9	War Club	hamm		2	4	invmau					60					6	25	124						0	0	2	mau	9m9	7m7	45			1	9m9	53	78				
+w	9gm	Martel de Fer	hamm		2	3	invgma	inv9gmu	inv9gmu			60					6	25	169						0	0	2	gma	9gm	7gm	53			1	9gm	61	99				
+w	9ss	Gladius	swor		1	3	invssd					24					2	18	25				8	22	0	0	2	ssd	9ss	7ss	30			1	9ss						
+w	9sm	Cutlass	swor		1	3	invscm	invscmu	invscmu			22					2	25	25	52			8	21	0	0	2	scm	9sm	7sm	43			1	9sm						
+w	9sb	Shamshir	swor		1	3	invsbr	invsbru	invsbru			32					2	23	58	58			10	24	0	0	2	sbr	9sb	7sb	35			1	9sb						
+w	9fc	Tulwar	swor		1	3	invflc					32					2	25	70	42			16	35	0	0	2	flc	9fc	7fc	37			1	9fc						
+w	9cr	Dimensional Blade	swor		2	3	invcrs	inv9cru	inv9cru			20					6	25	85	60			13	35	0	0	8	crs	9cr	7cr	37			1	9cr						
+w	9bs	Battle Sword	swor		2	3	invbsd					32					4	25	92	43			16	34	0	0	2	bsd	9bs	7bs	40			1	9bs						
+w	9ls	Rune Sword	swor		2	3	invlsd	inv9lsu	inv9lsu			44					4	25	103	79			10	42	0	0	2	lsd	9ls	7ls	44			1	9ls						
+w	9wd	Ancient Sword	swor		1	3	invwsd					44					3	25	127	88			18	43	0	0	2	wsd	9wd	7wd	49			1	9wd						
+w	92h	Espandon	swor		1	4	inv2hs	inv2hsu	inv2hsu			44					3	25	73	61			8	26	0	0	2	2hs	92h	72h	37			1	92h	18	40				
+w	9cm	Dacian Falx	swor		1	4	invclm					50					4	25	91	20			13	30	0	0	2	clm	9cm	7cm	42			1	9cm	26	61				
+w	9gs	Tusk Sword	swor		1	4	invgis	invgisu	invgisu			50					4	25	104	71			10	37	0	0	2	gis	9gs	7gs	45			1	9gs	19	58				
+w	9b9	Gothic Sword	swor		1	4	invbsw	invbswu	invbswu			40					4	25	113	20			14	40	0	0	2	bsw	9b9	7b7	48			1	9b9	39	60				
+w	9fb	Zweihander	swor		2	4	invflb	inv9fbu	inv9fbu			50					5	25	125	94			19	35	0	0	2	flb	9fb	7fb	49			1	9fb	29	54				
+w	9gd	Executioner Sword	swor		2	4	invgsd	invgsdu	invgsdu			50					6	25	170	110			24	40	0	0	2	gsd	9gd	7gd	54			1	9gd	47	80				
+w	9dg	Poignard	knif		1	2	invdgr					16					1	19	25				6	18	0	0	2	dgr	9dg	7dg	31			1	9dg						
+w	9di	Rondel	knif		1	2	invdir					20					1	24	25	58			10	26	0	0	2	dir	9di	7di	36			1	9di						
+w	9kr	Cinquedeas	knif		1	3	invkrs	invkrsu	invkrsu			24					3	25	25	88			15	31	0	0	2	kri	9kr	7kr	42			1	9kr						
+w	9bl	Stiletto	knif		1	3	invbld	inv9blu	inv9blu			24					2	25	47	97			19	36	0	0	2	bld	9bl	7bl	46			1	9bl						
+w	9tk	Battle Dart	tkni		1	2	invtkn			1	160	6						19	25	52			8	16	0	0	2	tkf	9tk	7tk	31			1	9tk			11	24	40	75
+w	9ta	Francisca	taxe		1	2	invtax			1	130	15						22	25	80			11	22	0	0	2	tax	9ta	7ta	34			1	9ta			18	33	16	32
+w	9bk	War Dart	tkni		1	2	invbkf			1	160	20						25	25	97			6	24	0	0	2	bkf	9bk	7bk	39			1	9bk			14	27	30	60
+w	9b8	Hurlbat	taxe		2	3	invbal			1	130	16						25	25	106			13	27	0	0	2	bal	9b8	7b8	41			1	9b8			24	34	16	24
+w	9ja	War Javelin	jave		1	3	invjav			1	60	10						18	25	25			6	19	0	0	8	jav	9ja	7ja	30			1	9ja			14	32	30	60
+w	9pi	Great Pilum	jave		1	3	invpil			1	50	12						25	25	88			11	26	0	0	8	pil	9pi	7pi	37			1	9pi			16	42	25	50
+w	9s9	Simbilan	jave		1	3	invssp			1	40	14						25	80	80			8	32	0	0	8	ssp	9s9	7s7	40			1	9s9			27	50	20	40
+w	9gl	Spiculum	jave		1	4	invglv			1	20	16						25	98	73			13	38	0	0	2	glv	9gl	7gl	46			1	9gl			32	60	8	20
+w	9ts	Harpoon	jave		1	4	invtsp			1	80	18						25	25	118			13	35	0	0	2	tsp	9ts	7ts	51			1	9ts			18	54	32	80
+w	9sr	War Spear	spea		2	4	invspr					30					3	21	25	25					0	0	8	spr	9sr	7sr	33			1	9sr	10	37				
+w	9tr	Fuscina	spea		2	4	invtri	invtriu	invtriu			35					4	24	77	25					0	0	8	tri	9tr	7tr	36			1	9tr	19	37				
+w	9br	War Fork	spea		2	4	invbrn	inv9bru	inv9bru			28					5	25	80	95					0	0	8	brn	9br	7br	41			1	9br	16	40				
+w	9st	Yari	spea		2	4	invspt					28					6	25	101						0	0	8	spt	9st	7st	44			1	9st	29	59				
+w	9p9	Lance	spea		2	4	invpik					25					6	25	110	88					0	0	8	pik	9p9	7p7	47			1	9p9	27	114				
+w	9b7	Lochaber Axe	pole		2	4	invbar					50					3	21	80						0	0	2	bar	9b7	7o7	33			1	9b7	6	58				
+w	9vo	Bill	pole		2	4	invvou					50					4	25	95						0	0	2	vou	9vo	7vo	37			1	9vo	14	53				
+w	9s8	Battle Scythe	pole		2	4	invscy	inv9s8u	inv9s8u			65					5	25	82	82					0	0	2	scy	9s8	7s8	40			1	9s8	18	45				
+w	9pa	Partizan	pole		2	4	invpax					65					5	23	113	67					0	0	2	pax	9pa	7pa	35			1	9pa	34	75				
+w	9h9	Bec-de-Corbin	pole		2	4	invhal					55					6	25	133	91					0	0	2	hal	9h9	7h7	51			1	9h9	13	85				
+w	9wc	Grim Scythe	pole		2	4	invwsc					55					6	25	140	140					0	0	2	wsc	9wc	7wc	55			1	9wc	30	70				
+w	8ss	Jo Staff	staf		1	3	invsst					20					2	18	25						0	0	8	sst	8ss	6ss	30	1		1	8ss	6	21				
+w	8ls	Quarterstaff	staf		1	4	invlst					30					3	23	25						0	0	8	lst	8ls	6ls	35	1		1	8ls	8	26				
+w	8cs	Cedar Staff	staf		1	4	invcst	invcstu	invcstu			35					4	25	25						0	0	8	cst	8cs	6cs	38	1		1	8cs	11	32				
+w	8bs	Gothic Staff	staf		1	4	invbst					40					4	25	25						0	0	8	bst	8bs	6bs	42	1		1	8bs	14	34				
+w	8ws	Rune Staff	staf		2	4	invwst	inv8wsu	inv8wsu			50					6	25	25						0	0	8	wst	8ws	6ws	47	1		1	8ws	24	58				
+w	8sb	Edge Bow	bow		2	3	invsbw					20	1				3	18	25	43					0	0	8	sbw	8sb	6sb	30			1	8sb	6	19				
+w	8hb	Razor Bow	bow		2	3	invhbw					32	1				4	21	25	62					0	0	8	hbw	8hb	6hb	33			1	8hb	8	22				
+w	8lb	Cedar Bow	bow		2	4	invlbw	inv8lbu	inv8lbu			28	1				5	23	53	49					0	0	8	lbw	8lb	6lb	35			1	8lb	10	29				
+w	8cb	Double Bow	bow		2	3	invcbw	invcbwu	invcbwu			36	1				4	25	58	73					0	0	8	cbw	8cb	6cb	39			1	8cb	11	26				
+w	8s8	Short Siege Bow	bow		2	3	invsbb	inv8s8u	inv8s8u			40	1				5	25	65	80					0	0	8	sbb	8s8	6s7	43			1	8s8	13	30				
+w	8l8	Large Siege Bow	bow		2	4	invlbb					44	1				6	25	80	95					0	0	8	lbb	8l8	6l7	46			1	8l8	10	42				
+w	8sw	Rune Bow	bow		2	3	invswb	invswbu	invswbu			48	1				5	25	73	103					0	0	8	swb	8sw	6sw	49			1	8sw	14	35				
+w	8lw	Gothic Bow	bow		2	4	invlwb					55	1				6	25	95	118					0	0	8	lwb	8lw	6lw	52			1	8lw	10	50				
+w	8lx	Arbalest	xbow		2	3	invlxb	inv8lxu	inv8lxu			30	1				3	22	52	61					0	0	8	lxb	8lx	6lx	34			1	8lx	14	27				
+w	8mx	Siege Crossbow	xbow		2	3	invmxb	inv8mxu	inv8mxu			40	1				4	25	80	70					0	0	8	mxb	8mx	6mx	40			1	8mx	20	42				
+w	8hx	Ballista	xbow		2	4	invhxb	invhxbu	invhxbu			50	1				6	25	110	80					0	0	8	hxb	8hx	6hx	47			1	8hx	33	55				
+w	8rx	Chu-Ko-Nu	xbow		2	3	invrxb	invrxbu	invrxbu			40	1				5	25	80	95					0	0	8	rxb	8rx	6rx	54			1	8rx	14	32				
+w	qf1	Khalim's Flail	mace		2	3	invqf1					30		17		1	3	0	41	35			1	15	0	0	2	fla			0				qf1						
+w	qf2	Khalim's Will	mace		2	3	invqf2					30		17		1	3	0					1	15	0	0	2	fla			0				qf2						
+w	ktr	Katar	h2h		1	3	invktr					48					2	0	20	20			4	7	0	100	2	ktr	9ar	7ar	1			1	ktr						
+w	wrb	Wrist Blade	h2h		1	3	invktr					52					2	0	33	33			5	9	0	100	2	wrb	9wb	7wb	9			1	wrb						
+w	axf	Hatchet Hands	h2h		1	3	invaxf	invaxfu	invaxfu			56					2	0	37	37			2	15	0	100	2	axf	9xf	7xf	12			1	axf						
+w	ces	Cestus	h2h		1	3	invaxf	invaxfu	invaxfu			72					2	0	42	42			7	15	0	100	2	ces	9cs	7cs	15			1	ces						
+w	clw	Claws	h2h		1	3	invclw					64					3	0	46	46			8	15	0	100	2	clw	9lw	7lw	18			1	clw						
+w	btl	Blade Talons	h2h		1	3	invclw					69					3	0	50	50			10	14	0	100	2	btl	9tw	7tw	21			1	btl						
+w	skr	Scissors Katar	h2h		1	3	invskr	invskru	invskru			68					3	0	55	55			9	17	0	100	2	skr	9qr	7qr	24			1	skr						
+w	9ar	Quhab	h2h		1	3	invktr					48					3	21	57	57			11	24	0	100	2	ktr	9ar	7ar	28			1	9ar						
+w	9wb	Wrist Spike	h2h		1	3	invktr					56					2	24	66	66			13	27	0	100	2	wrb	9wb	7wb	32			1	9wb						
+w	9xf	Fascia	h2h		1	3	invaxf	invaxfu	invaxfu			64					2	27	69	69			8	37	0	100	2	axf	9xf	7xf	36			1	9xf						
+w	9cs	Hand Scythe	h2h2		1	3	invaxf	invaxfu	invaxfu			72					2	30	73	73			16	37	0	100	2	ces	9cs	7cs	41			1	9cs						
+w	9lw	Greater Claws	h2h2		1	3	invclw					52					3	33	76	76			18	37	0	100	2	clw	9lw	7lw	45			1	9lw						
+w	9tw	Greater Talons	h2h2		1	3	invclw					69					3	37	79	79			21	35	0	100	2	btl	9tw	7tw	50			1	9tw						
+w	9qr	Scissors Quhab	h2h2		1	3	invskr	invskru	invskru			68					3	40	82	82			19	40	0	100	2	skr	9qr	7qr	54			1	9qr						
+w	7ar	Suwayyah	h2h2		1	3	invktr					48					3	44	99	99			39	52	0	100	2	ktr	9ar	7ar	59			1	7ar						
+w	7wb	Wrist Sword	h2h2		1	3	invktr					56					3	46	105	105			34	45	0	100	2	wrb	9wb	7wb	62			1	7wb						
+w	7xf	War Fist	h2h2		1	3	invaxf	invaxfu	invaxfu			64					2	51	108	108			44	53	0	100	2	axf	9xf	7xf	68			1	7xf						
+w	7cs	Battle Cestus	h2h2		1	3	invaxf	invaxfu	invaxfu			72					2	54	110	110			36	42	0	100	2	ces	9cs	7cs	73			1	7cs						
+w	7lw	Feral Claws	h2h2		1	3	invclw					52					3	58	113	113			22	53	0	100	2	clw	9lw	7lw	78			1	7lw						
+w	7tw	Runic Talons	h2h2		1	3	invclw					69					3	60	115	115			24	44	0	100	2	btl	9tw	7tw	81			1	7tw						
+w	7qr	Scissors Suwayyah	h2h2		1	3	invskr	invskru	invskru			68					3	64	118	118			40	51	0	100	2	skr	9qr	7qr	85			1	7qr						
+w	7ha	Tomahawk	axe		1	3	invhax	invhaxu	invhaxu			28					2	40	125	67			33	58	0	100	2	hax	9ha	7ha	54			1	7ha						
+w	7ax	Small Crescent	axe		2	3	invaxe	invaxeu	invaxeu			24					4	45	115	83			38	60	0	100	2	axe	9ax	7ax	61			1	7ax						
+w	72a	Ettin Axe	axe		2	3	inv2ax					24					5	52	145	45			33	66	0	100	2	2ax	92a	72a	70			1	72a						
+w	7mp	War Spike	axe		2	3	invmpi	invmpiu	invmpiu			26					6	59	133	54			30	48	0	100	2	mpi	9mp	7mp	79			1	7mp						
+w	7wa	Berserker Axe	axe		2	3	invwax					26					6	64	138	59			24	71	0	100	2	wax	9wa	7wa	85			1	7wa						
+w	7la	Feral Axe	axe		2	3	invlax					30					4	42	196						0	100	2	lax	9la	7la	57			1	7la	25	123				
+w	7ba	Silver-edged Axe	axe		2	3	invbrx					35					5	48	166	65					0	100	2	bax	9ba	7ba	65			1	7ba	62	110				
+w	7bt	Decapitator	axe		2	3	invbtx	invbtxu	invbtxu			40					5	54	189	33					0	100	2	btx	9bt	7bt	73			1	7bt	49	137				
+w	7ga	Champion Axe	axe		2	4	invgax	invgaxu	invgaxu			50					6	61	167	59					0	100	2	gax	9ga	7ga	82			1	7ga	59	94				
+w	7gi	Glorious Axe	axe		2	3	invgix					50					6	66	164	55					0	100	2	gix	9gi	7gi	85			1	7gi	60	124				
+w	7wn	Polished Wand	wand		1	2	invwnd					22					2	41	25				18	33	0	100	8	wnd	9wn	7wn	55			1	7wn						
+w	7yw	Ghost Wand	wand		1	2	invywn					14					2	48	25				20	40	0	100	8	ywn	9yw	7yw	65			1	7yw						
+w	7bw	Lich Wand	wand		1	2	invbwn	invbwnu	invbwnu			17					2	56	25				10	31	0	100	2	bwn	9bw	7bw	75			1	7bw						
+w	7gw	Unearthed Wand	wand		1	2	invgwn					18					2	64	25				22	28	0	100	2	gwn	9gw	7gw	86			1	7gw						
+w	7cl	Truncheon	club		1	3	invclb	invclbu	invclbu			55					2	39	88	43			35	43	0	100	2	clb	9cl	7cl	52			1	7cl						
+w	7sc	Mighty Scepter	scep		1	3	invscp					50					2	46	125	65			40	52	0	100	2	scp	9sc	7sc	62			1	7sc						
+w	7qs	Seraph Rod	scep		1	3	invgsc					60					3	57	108	69			45	54	0	100	2	gsc	9qs	7qs	76			1	7qs						
+w	7ws	Caduceus	scep		2	3	invwsp					70					5	66	97	70			37	43	0	100	2	wsp	9ws	7ws	85			1	7ws						
+w	7sp	Tyrant Club	club		1	3	invspc	invspcu	invspcu			65					3	42	133				32	58	0	100	2	spc	9sp	7sp	57			1	7sp						
+w	7ma	Reinforced Mace	mace		1	3	invmac		inv7mas			60					2	47	145	46			41	49	0	100	2	mac	9ma	7ma	63			1	7ma						
+w	7mt	Devil Star	mace		1	3	invmst	invmstu	invmstu			72					3	52	153	44			43	53	0	100	2	mst	9mt	7mt	70			1	7mt						
+w	7fl	Scourge	mace		2	3	invfla					65					5	57	125	77			3	80	0	100	2	fla	9fl	7fl	76			1	7fl						
+w	7wh	Legendary Mallet	hamm		2	3	invwhm					65					4	61	189				50	61	0	100	2	whm	9wh	7wh	82			1	7wh						
+w	7m7	Ogre Maul	hamm		2	4	invmau					60					6	51	225						0	100	2	mau	9m9	7m7	69			1	7m7	77	106				
+w	7gm	Thunder Maul	hamm		2	3	invgma					60					6	65	253						0	100	2	gma	9gm	7gm	85			1	7gm	33	180				
+w	7ss	Falcata	swor		1	3	invssd					24					2	42	150	88			31	59	0	100	2	ssd	9ss	7ss	56			1	7ss						
+w	7sm	Ataghan	swor		1	3	invscm	invscmu	invscmu			22					2	45	138	95			26	46	0	100	2	scm	9sm	7sm	61			1	7sm						
+w	7sb	Elegant Blade	swor		1	3	invsbr	invsbru	invsbru			32					2	47	109	122			33	45	0	100	2	sbr	9sb	7sb	63			1	7sb						
+w	7fc	Hydra Edge	swor		1	3	invflc					32					2	51	142	105			28	68	0	100	2	flc	9fc	7fc	69			1	7fc						
+w	7cr	Phase Blade	swor		2	3	invcrs	invcrsu	invcrsu			0	1				6	54	25	136			31	35	0	100	8	crs	9cr	7cr	73			1	7cr						
+w	7bs	Conquest Sword	swor		2	3	invbsd					32					4	58	142	112			37	53	0	100	2	bsd	9bs	7bs	78			1	7bs						
+w	7ls	Cryptic Sword	swor		2	3	invlsd	invlsdu	invlsdu			44					4	61	99	109			5	77	0	100	2	lsd	9ls	7ls	82			1	7ls						
+w	7wd	Mythical Sword	swor		1	3	invwsd					44					3	66	147	124			40	50	0	100	2	wsd	9wd	7wd	85			1	7wd						
+w	72h	Legend Sword	swor		1	4	inv2hs	inv2hsu	inv2hsu			44					3	44	175	100			22	56	0	100	2	2hs	92h	72h	59			1	72h	50	94				
+w	7cm	Highland Blade	swor		1	4	invclm					50					4	49	171	104			22	62	0	100	2	clm	9cm	7cm	66			1	7cm	67	96				
+w	7gs	Balrog Blade	swor		1	4	invgis	invgisu	invgisu			50					4	53	185	87			15	75	0	100	2	gis	9gs	7gs	71			1	7gs	55	118				
+w	7b7	Champion Sword	swor		1	4	invbsw	invbswu	invbswu			40					4	57	163	103			24	54	0	100	2	bsw	9b9	7b7	77			1	7b7	71	83				
+w	7fb	Colossus Sword	swor		2	4	invflb					50					5	60	182	95			26	70	0	100	2	flb	9fb	7fb	80			1	7fb	61	121				
+w	7gd	Colossus Blade	swor		2	4	invgsd	invgsdu	invgsdu			50					6	63	189	110			25	65	0	100	2	gsd	9gd	7gd	85			1	7gd	58	115				
+w	7dg	Bone Knife	knif		1	2	invdgr					26					1	43	38	75			23	49	0	100	2	dgr	9dg	7dg	58			1	7dg						
+w	7di	Mithril Point	knif		1	2	invdir					55					1	52	55	98			37	53	0	100	2	dir	9di	7di	70			1	7di						
+w	7kr	Fanged Knife	knif		1	3	invkrs	invkrsu	invkrsu			36					3	62	42	86			15	57	0	100	2	kri	9kr	7kr	83			1	7kr						
+w	7bl	Legend Spike	knif		1	3	invbld					47					2	66	65	67			31	47	0	100	2	bld	9bl	7bl	85			1	7bl						
+w	7tk	Flying Knife	tkni		1	2	invtkn			1	200	6						48	48	141			23	54	0	100	2	tkf	9tk	7tk	64			1	7tk			23	54	40	75
+w	7ta	Flying Axe	taxe		1	2	invtax			1	180	15						42	88	108			17	65	0	100	2	tax	9ta	7ta	56			1	7ta			15	66	16	32
+w	7bk	Winged Knife	tkni		1	2	invbkf	invtk3		1	200	20						57	45	142			27	35	0	100	2	bkf	9bk	7bk	77			1	7bk			23	39	30	60
+w	7b8	Winged Axe	taxe		2	3	invbal			1	180	16						60	96	122			11	56	0	100	2	bal	9b8	7b8	80			1	7b8			7	60	16	24
+w	7ja	Hyperion Javelin	jave		1	3	invjav			1	100	10						40	98	123			21	57	0	100	8	jav	9ja	7ja	54			1	7ja			28	55	30	60
+w	7pi	Stygian Pilum	jave		1	3	invpil			1	90	12						46	118	112			14	64	0	100	8	pil	9pi	7pi	62			1	7pi			21	75	25	50
+w	7s7	Balrog Spear	jave		1	3	invssp			1	80	14						53	127	95			33	63	0	100	8	ssp	9s9	7s7	71			1	7s7			40	62	20	40
+w	7gl	Ghost Glaive	jave		1	4	invglv			1	75	16						59	89	137			19	60	0	100	2	glv	9gl	7gl	79			1	7gl			30	85	8	20
+w	7ts	Winged Harpoon	jave		1	4	invtsp			1	80	18						65	76	145			27	35	0	100	2	tsp	9ts	7ts	85			1	7ts			11	77	32	80
+w	7sr	Hyperion Spear	spea		2	4	invspr					30					3	43	155	120					0	100	8	spr	9sr	7sr	58			1	7sr	35	119				
+w	7tr	Stygian Pike	spea		2	4	invtri	invtriu	invtriu			35					4	49	168	97					0	100	8	tri	9tr	7tr	66			1	7tr	29	144				
+w	7br	Mancatcher	spea		2	4	invbrn					28					5	55	132	134					0	100	8	brn	9br	7br	74			1	7br	42	92				
+w	7st	Ghost Spear	spea		2	4	invspt					28					6	62	122	163					0	100	8	spt	9st	7st	83			1	7st	18	155				
+w	7p7	War Pike	spea		2	4	invpik					25					6	66	165	106					0	100	8	pik	9p9	7p7	85			1	7p7	33	178				
+w	7o7	Ogre Axe	pole		2	4	invbar					50					3	45	195	75					0	100	2	bar	9b7	7o7	60			1	7o7	28	145				
+w	7vo	Colossus Voulge	pole		2	4	invvou					50					4	48	210	55					0	100	2	vou	9vo	7vo	64			1	7vo	17	165				
+w	7s8	Thresher	pole		2	4	invscy	invscyu	invscyu			65					5	53	152	118					0	100	2	scy	9s8	7s8	71			1	7s8	12	141				
+w	7pa	Cryptic Axe	pole		2	4	invpax					65					5	59	165	103					0	100	2	pax	9pa	7pa	79			1	7pa	33	150				
+w	7h7	Great Poleaxe	pole		2	4	invhal					55					6	63	179	99					0	100	2	hal	9h9	7h7	84			1	7h7	46	127				
+w	7wc	Giant Thresher	pole		2	4	invwsc					55					6	66	188	140					0	100	2	wsc	9wc	7wc	85			1	7wc	40	114				
+w	6ss	Walking Stick	staf		1	3	invsst					20					2	43	25						0	100	8	sst	8ss	6ss	58	1		1	6ss	69	85				
+w	6ls	Stalagmite	staf		1	4	invlst					30					3	49	63	35					0	100	8	lst	8ls	6ls	66	1		1	6ls	75	107				
+w	6cs	Elder Staff	staf		1	4	invcst	invcstu	invcstu			35					4	55	44	37					0	100	8	cst	8cs	6cs	74	1		1	6cs	80	93				
+w	6bs	Shillelagh	staf		1	4	invbst					40					4	62	52	27					0	100	8	bst	8bs	6bs	83	1		1	6bs	65	108				
+w	6ws	Archon Staff	staf		2	4	invwst					26					6	66	34						0	100	8	wst	8ws	6ws	85	1		1	6ws	83	99				
+w	6sb	Spider Bow	bow		2	3	invsbw					20	1				3	41	64	143					0	100	8	sbw	8sb	6sb	55			1	6sb	23	50				
+w	6hb	Blade Bow	bow		2	3	invhbw					32	1				4	45	76	119					0	100	8	hbw	8hb	6hb	60			1	6hb	21	41				
+w	6lb	Shadow Bow	bow		2	4	invlbw					28	1				5	47	52	188					0	100	8	lbw	8lb	6lb	63			1	6lb	15	59				
+w	6cb	Great Bow	bow		2	3	invcbw	invcbwu	invcbwu			36	1				4	51	121	107					0	100	8	cbw	8cb	6cb	68			1	6cb	12	52				
+w	6s7	Diamond Bow	bow		2	3	invsbb	invsbbu	invsbbu			40	1				5	54	89	132					0	100	8	sbb	8s8	6s7	72			1	6s7	33	40				
+w	6l7	Crusader Bow	bow		2	4	invlbb					44	1				6	57	97	121					0	100	8	lbb	8l8	6l7	77			1	6l7	15	63				
+w	6sw	Ward Bow	bow		2	3	invswb	invswbu	invswbu			48	1				5	60	72	146					0	100	8	swb	8sw	6sw	80			1	6sw	20	53				
+w	6lw	Hydra Bow	bow		2	4	invlwb					55	1				6	63	134	167					0	100	8	lwb	8lw	6lw	85			1	6lw	10	68				
+w	6lx	Pellet Bow	xbow		2	3	invlxb	invlxbu	invlxbu			30	1				3	42	83	155					0	100	8	lxb	8lx	6lx	57			1	6lx	28	73				
+w	6mx	Gorgon Crossbow	xbow		2	3	invmxb	invmxbu	invmxbu			40	1				4	50	117	105					0	100	8	mxb	8mx	6mx	67			1	6mx	25	87				
+w	6hx	Colossus Crossbow	xbow		2	4	invhxb	invhxbu	invhxbu			50	1				6	56	163	77					0	100	8	hxb	8hx	6hx	75			1	6hx	32	91				
+w	6rx	Demon Crossbow	xbow		2	3	invrxb	invrxbu	invrxbu			40	1				5	63	141	98					0	100	8	rxb	8rx	6rx	84			1	6rx	26	40				
+w	ob1	Eagle Orb	orb		1	2	invob1					20					4	0					2	5	0	100	8	ob1	ob6	obb	1	1	303	1	ob1						
+w	ob2	Sacred Globe	orb		1	2	invob2					30					4	0					3	8	0	100	8	ob2	ob7	obc	8	1	303	1	ob2						
+w	ob3	Smoked Sphere	orb		1	2	invob3					35					4	8					4	10	0	100	8	ob3	ob8	obd	12	1	303	1	ob3						
+w	ob4	Clasped Orb	orb		1	2	invob4					40					4	13					5	12	0	100	8	ob4	ob9	obe	17	1	303	1	ob4						
+w	ob5	Jared's Stone	orb		1	3	invob5					50					4	18					8	18	0	100	8	ob5	oba	obf	24	1	303	1	ob5						
+w	am1	Stag Bow	abow		2	4	invam1	invswbu	invswbu			48	1				5	14	30	45					0	100	8	am1	am6	amb	18		300	1	am1	7	12				
+w	am2	Reflex Bow	abow		2	4	invam2					55	1				5	20	35	60					0	100	8	am2	am7	amc	27		300	1	am2	9	19				
+w	am3	Maiden Spear	aspe		2	4	invam3					28					6	14	54	40					0	100	8	am3	am8	amd	18		302	1	am3	18	24				
+w	am4	Maiden Pike	aspe		2	4	invam4					25					6	20	63	52					0	100	8	am4	am9	ame	27		302	1	am4	23	55				
+w	am5	Maiden Javelin	ajav		1	3	invam5			1	80	6						17	33	47			8	14	0	100	2	am5	ama	amf	23		302	1	am5			6	22	32	80
+w	ob6	Glowing Orb	orb		1	2	invob1					20					4	24					8	21	0	100	8	ob1	ob6	obb	32	1	303	1	ob6						
+w	ob7	Crystalline Globe	orb		1	2	invob2					30					4	27					10	26	0	100	8	ob2	ob7	obc	37	1	303	1	ob7						
+w	ob8	Cloudy Sphere	orb		1	2	invob3					35					4	30					11	29	0	100	8	ob3	ob8	obd	41	1	303	1	ob8						
+w	ob9	Sparkling Ball	orb		1	2	invob4					40					4	34					13	32	0	100	8	ob4	ob9	obe	46	1	303	1	ob9						
+w	oba	Swirling Crystal	orb		1	3	invob5					50					4	37					18	42	0	100	8	ob5	oba	obf	50	1	303	1	oba						
+w	am6	Ashwood Bow	abow		2	4	invam1	invswbu	invswbu			48	1				5	29	56	77					0	100	8	am1	am6	amb	39		300	1	am6	16	29				
+w	am7	Ceremonial Bow	abow		2	4	invam2					55	1				5	35	73	110					0	100	8	am2	am7	amc	47		300	1	am7	19	41				
+w	am8	Ceremonial Spear	aspe		2	4	invam3					28					6	32	101	80					0	100	8	am3	am8	amd	43		302	1	am8	34	51				
+w	am9	Ceremonial Pike	aspe		2	4	invam4					25					6	38	115	98					0	100	8	am4	am9	ame	51		302	1	am9	42	101				
+w	ama	Ceremonial Javelin	ajav		1	3	invam5			1	80	6						26	25	109			18	35	0	100	2	am5	ama	amf	35		302	1	ama			18	54	32	80
+w	obb	Heavenly Stone	orb		1	2	invob1					20					4	44					21	46	0	100	8	ob1	ob6	obb	59	1	303	1	obb						
+w	obc	Eldritch Orb	orb		1	2	invob2					30					4	50					18	50	0	100	8	ob2	ob7	obc	67	1	303	1	obc						
+w	obd	Demon Heart	orb		1	2	invob3					35					4	56					23	55	0	100	8	ob3	ob8	obd	75	1	303	1	obd						
+w	obe	Vortex Orb	orb		1	2	invob4					40					4	63					12	66	0	100	8	ob4	ob9	obe	84	1	303	1	obe						
+w	obf	Dimensional Shard	orb		1	3	invob5					50					4	66					30	53	0	100	8	ob5	oba	obf	85	1	303	1	obf						
+w	amb	Matriarchal Bow	abow		2	4	invam1	invswbu	invswbu			48	1				5	39	87	187					0	100	8	am1	am6	amb	53		300	1	amb	20	47				
+w	amc	Grand Matron Bow	abow		2	4	invam2					55	1				5	58	108	152					0	100	8	am2	am7	amc	78		300	1	amc	14	72				
+w	amd	Matriarchal Spear	aspe		2	4	invam3					28					6	45	114	142					0	100	8	am3	am8	amd	61		302	1	amd	65	95				
+w	ame	Matriarchal Pike	aspe		2	4	invam4					25					6	60	132	149					0	100	8	am4	am9	ame	81		302	1	ame	37	153				
+w	amf	Matriarchal Javelin	ajav		1	3	invam5			1	80	6						48	107	151			30	54	0	100	2	am5	ama	amf	65		302	1	amf			35	66	32	80
+a	cap	Cap	helm		2	2	invcap	invcapu	invcapu	0	0	12	0	0	0		2	0	0		3	5	0	0	0	0	8	cap	xap	uap	1			1	cap					0	
+a	skp	Skull Cap	helm		2	2	invskp			0	0	18	0	0	0		2	0	15		8	11	0	0	0	0	8	skp	xkp	ukp	5			1	skp					0	
+a	hlm	Helm	helm		2	2	invhlm	invhlmu	invhlmu	0	0	24	0	0	0		2	0	26		15	18	0	0	0	0	8	hlm	xlm	ulm	11			1	hlm					0	
+a	fhl	Full Helm	helm		2	2	invfhl	invfhlu	invfhlu	0	0	30	0	0	0		2	0	41		23	26	0	0	0	0	8	fhl	xhl	uhl	15			1	fhl					0	
+a	ghm	Great Helm	helm		2	2	invghm			0	0	40	0	0	0		3	0	63		30	35	0	0	0	0	8	ghm	xhm	uhm	23			1	ghm					0	
+a	crn	Crown	helm		2	2	invcrn			0	0	50	0	0	0		3	0	55		25	45	0	0	0	0	8	crn	xrn	urn	29			1	crn					0	
+a	msk	Mask	helm		2	2	invmsk			0	0	20	0	0	0		3	0	23		9	27	0	0	0	0	2	msk	xsk	usk	19			1	msk					0	
+a	qui	Quilted Armor	tors		2	3	invqlt			0	0	20	0	0	0		2	0	12		8	11	0	0	0	0	8	qui	xui	uui	1			1	qui					0	
+a	lea	Leather Armor	tors		2	3	invlea			0	0	24	0	0	0		2	0	15		14	17	0	0	0	0	8	lea	xea	uea	3			1	lea					0	
+a	hla	Hard Leather Armor	tors		2	3	invhla			0	0	28	0	0	0		2	0	20		21	24	0	0	0	0	8	hla	xla	ula	5			1	hla					0	
+a	stu	Studded Leather	tors		2	3	invstu			0	0	32	0	0	0		2	0	27		32	35	0	0	0	0	8	stu	xtu	utu	8			1	stu					0	
+a	rng	Ring Mail	tors		2	3	invrng			0	0	26	0	0	0		3	0	36		45	48	0	0	0	0	8	rng	xng	ung	11			1	rng					0	
+a	scl	Scale Mail	tors		2	3	invscl			0	0	36	0	0	0		2	0	44		57	60	0	0	0	0	8	scl	xcl	ucl	13			1	scl					0	
+a	chn	Chain Mail	tors		2	3	invchn			0	0	45	0	0	0		2	0	48		72	75	0	0	0	0	8	chn	xhn	uhn	15			1	chn					0	
+a	brs	Breast Plate	tors		2	3	invbrs			0	0	50	0	0	0		3	0	30		65	68	0	0	0	0	8	brs	xrs	urs	18			1	brs					0	
+a	spl	Splint Mail	tors		2	3	invspl			0	0	30	0	0	0		2	0	51		90	95	0	0	0	0	8	spl	xpl	upl	20			1	spl					0	
+a	plt	Plate Mail	tors		2	3	invplt			0	0	60	0	0	0		2	0	65		108	116	0	0	0	0	8	plt	xlt	ult	24			1	plt					0	
+a	fld	Field Plate	tors		2	3	invfld			0	0	48	0	0	0		2	0	55		101	105	0	0	0	0	8	fld	xld	uld	28			1	fld					0	
+a	gth	Gothic Plate	tors		2	3	invgth			0	0	55	0	0	0		4	0	70		128	135	0	0	0	0	8	gth	xth	uth	32			1	gth					0	
+a	ful	Full Plate Mail	tors		2	3	invful	invfulu	invfulu	0	0	70	0	0	0		4	0	80		150	161	0	0	0	0	8	ful	xul	uul	37			1	ful					0	
+a	aar	Ancient Armor	tors		2	3	invaar	invaaru	invaaru	0	0	60	0	0	0		4	0	100		218	233	0	0	0	0	8	aar	xar	uar	40			1	aar					0	
+a	ltp	Light Plate	tors		2	3	invltp			0	0	60	0	0	0		3	0	41		90	107	0	0	0	0	8	ltp	xtp	utp	35			1	ltp					0	
+a	buc	Buckler	shie		2	2	invbuc	invbucu	invbucu	0	0	12	0	0	0		1	0	12		4	6	0	0	0	0	8	buc	xuc	uuc	1			1	buc					0	
+a	sml	Small Shield	shie		2	2	invsml	invsmlu	invsmlu	0	0	16	0	0	0		2	0	22		8	10	0	0	0	0	5	sml	xml	uml	5			1	sml					0	
+a	lrg	Large Shield	shie		2	3	invlrg	invlrgu	invlrgu	0	0	24	0	0	0		3	0	34		12	14	0	0	0	0	2	lrg	xrg	urg	11			1	lrg					0	
+a	kit	Kite Shield	shie		2	3	invkit	invkitu	invkitu	0	0	30	0	0	0		3	0	47		16	18	0	0	0	0	2	kit	xit	uit	15			1	kit					0	
+a	tow	Tower Shield	shie		2	3	invtow	invtowu	invtowu	0	0	60	0	0	0		3	0	75		22	25	0	0	0	0	2	tow	xow	uow	22			1	tow					0	
+a	gts	Gothic Shield	shie		2	4	invgts	invgtsu	invgtsu	0	0	40	0	0	0		3	0	60		30	35	0	0	0	0	2	gts	xts	uts	30			1	gts					0	
+a	lgl	Leather Gloves	glov		2	2	invlgl			0	0	12	0	0	0		0	0	0		2	3	0	0	0	0	8	lgl	xlg	ulg	3			1	lgl					0	
+a	vgl	Heavy Gloves	glov		2	2	invvgl			0	0	14	0	0	0		0	0	0		5	6	0	0	0	0	8	vgl	xvg	uvg	7			1	vgl					0	
+a	mgl	Chain Gloves	glov		2	2	invmgl			0	0	16	0	0	0		0	0	25		8	9	0	0	0	0	8	mgl	xmg	umg	12			1	mgl					0	
+a	tgl	Light Gauntlets	glov		2	2	invtgl			0	0	18	0	0	0		0	0	45		9	11	0	0	0	0	8	tgl	xtg	utg	20			1	tgl					0	
+a	hgl	Gauntlets	glov		2	2	invhgl			0	0	24	0	0	0		0	0	60		12	15	0	0	0	0	8	hgl	xhg	uhg	27			1	hgl					0	
+a	lbt	Boots	boot		2	2	invlbt			0	0	12	0	0	0		0	0	0		2	3	0	0	0	0	8	lbt	xlb	ulb	3			1	lbt					0	
+a	vbt	Heavy Boots	boot		2	2	invvbt			0	0	14	0	0	0		0	0	18		5	6	0	0	0	0	8	vbt	xvb	uvb	7			1	vbt					0	
+a	mbt	Chain Boots	boot		2	2	invmbt			0	0	16	0	0	0		0	0	30		8	9	0	0	0	0	8	mbt	xmb	umb	12			1	mbt					0	
+a	tbt	Light Plated Boots	boot		2	2	invtbt			0	0	18	0	0	0		0	0	50		9	11	0	0	0	0	8	tbt	xtb	utb	20			1	tbt					0	
+a	hbt	Greaves	boot		2	2	invhbt			0	0	24	0	0	0		0	0	70		12	15	0	0	0	0	8	hbt	xhb	uhb	27			1	hbt					0	
+a	lbl	Sash	belt		2	1	invlbl			0	0	12	0	0	0		0	0	0		2	2	0	0	1	0	8	lbl	zlb	ulc	3			1	lbl					0	
+a	vbl	Light Belt	belt		2	1	invvbl			0	0	14	0	0	0		0	0	0		3	3	0	0	4	0	8	vbl	zvb	uvc	7			1	vbl					0	
+a	mbl	Belt	belt		2	1	invmbl			0	0	16	0	0	0		0	0	25		5	5	0	0	0	0	8	mbl	zmb	umc	12			1	mbl					0	
+a	tbl	Heavy Belt	belt		2	1	invtbl			0	0	18	0	0	0		0	0	45		6	6	0	0	5	0	8	tbl	ztb	utc	20			1	tbl					0	
+a	hbl	Plated Belt	belt		2	1	invhbl			0	0	24	0	0	0		0	0	60		8	11	0	0	3	0	8	hbl	zhb	uhc	27			1	hbl					0	
+a	bhm	Bone Helm	helm		2	2	invbhm	invbhmu	invbhmu	0	0	40	0	0	0		2	0	25		33	36	0	0	0	0	8	bhm	xh9	uh9	22			1	bhm					0	
+a	bsh	Bone Shield	shie		2	3	invbsh	invbshu	invbshu	0	0	40	0	0	0		2	0	25		10	30	0	0	0	0	8	bsh	xsh	ush	19			1	bsh					0	
+a	spk	Spiked Shield	shie		2	3	invspk	invspku	invspku	0	0	40	0	0	0		2	0	30		15	25	0	0	0	0	8	spk	xpk	upk	11			1	spk					0	
+a	xap	War Hat	helm		2	2	invcap			0	0	12	0	0	0		2	22	20		45	53	0	0	0	0	8	cap	xap	uap	34			1	xap					0	
+a	xkp	Sallet	helm		2	2	invskp	invxkpu	invxkpu	0	0	18	0	0	0		2	25	43		52	62	0	0	0	0	8	skp	xkp	ukp	37			1	xkp					0	
+a	xlm	Casque	helm		2	2	invhlm	invhlmu	invhlmu	0	0	24	0	0	0		2	25	59		63	72	0	0	0	0	8	hlm	xlm	ulm	42			1	xlm					0	
+a	xhl	Basinet	helm		2	2	invfhl	invfhlu	invfhlu	0	0	30	0	0	0		2	25	82		75	84	0	0	0	0	8	fhl	xhl	uhl	45			1	xhl					0	
+a	xhm	Winged Helm	helm		2	2	invghm			0	0	40	0	0	0		3	25	115		85	98	0	0	0	0	8	ghm	xhm	uhm	51			1	xhm					0	
+a	xrn	Grand Crown	helm		2	2	invcrn	invxrnu	invxrnu	0	0	50	0	0	0		3	25	103		78	113	0	0	0	0	8	crn	xrn	urn	55			1	xrn					0	
+a	xsk	Death Mask	helm		2	2	invmsk			0	0	20	0	0	0		3	25	55		54	86	0	0	0	0	2	msk	xsk	usk	48			1	xsk					0	
+a	xui	Ghost Armor	tors		2	3	invqlt			0	0	20	0	0	0		2	22	38		102	117	0	0	0	0	8	qui	xui	uui	34			1	xui					0	
+a	xea	Serpentskin Armor	tors		2	3	invlea			0	0	24	0	0	0		2	24	43		111	126	0	0	0	0	8	lea	xea	uea	36			1	xea					0	
+a	xla	Demonhide Armor	tors		2	3	invhla			0	0	28	0	0	0		2	25	50		122	136	0	0	0	0	8	hla	xla	ula	37			1	xla					0	
+a	xtu	Trellised Armor	tors		2	3	invstu	invxtuu	invxtuu	0	0	32	0	0	0		2	25	61		138	153	0	0	0	0	8	stu	xtu	utu	40			1	xtu					0	
+a	xng	Linked Mail	tors		2	3	invrng			0	0	26	0	0	0		3	25	74		158	172	0	0	0	0	8	rng	xng	ung	42			1	xng					0	
+a	xcl	Tigulated Mail	tors		2	3	invscl			0	0	36	0	0	0		3	25	86		176	190	0	0	0	0	8	scl	xcl	ucl	43			1	xcl					0	
+a	xhn	Mesh Armor	tors		2	3	invchn			0	0	45	0	0	0		3	25	92		198	213	0	0	0	0	8	chn	xhn	uhn	45			1	xhn					0	
+a	xrs	Cuirass	tors		2	3	invbrs		invxrss	0	0	50	0	0	0		3	25	65		188	202	0	0	0	0	8	brs	xrs	urs	47			1	xrs					0	
+a	xpl	Russet Armor	tors		2	3	invspl			0	0	30	0	0	0		3	25	97		225	243	0	0	0	0	8	spl	xpl	upl	49			1	xpl					0	
+a	xlt	Templar Coat	tors		2	3	invplt			0	0	60	0	0	0		3	25	118		252	274	0	0	0	0	8	plt	xlt	ult	52			1	xlt					0	
+a	xld	Sharktooth Armor	tors		2	3	invfld			0	0	48	0	0	0		3	25	103		242	258	0	0	0	0	8	fld	xld	uld	55			1	xld					0	
+a	xth	Embossed Plate	tors		2	3	invgth			0	0	55	0	0	0		4	25	125		282	303	0	0	0	0	8	gth	xth	uth	58			1	xth					0	
+a	xul	Chaos Armor	tors		2	3	invful			0	0	70	0	0	0		4	25	140		315	342	0	0	0	0	8	ful	xul	uul	61			1	xul					0	
+a	xar	Ornate Plate	tors		2	3	invaar	invxaru	invxaru	0	0	60	0	0	0		4	25	170		417	450	0	0	0	0	8	aar	xar	uar	64			1	xar					0	
+a	xtp	Mage Plate	tors		2	3	invltp			0	0	60	0	0	0		3	25	55		225	261	0	0	0	0	8	ltp	xtp	utp	60			1	xtp					0	
+a	xuc	Defender	shie		2	2	invbuc	invbucu	invbucu	0	0	68	0	0	0		1	22	38		41	49	0	0	0	0	8	buc	xuc	uuc	34			1	xuc					0	
+a	xml	Round Shield	shie		2	2	invsml	invxmlu	invxmlu	0	0	64	0	0	0		2	25	53		47	55	0	0	0	0	5	sml	xml	uml	37			1	xml					0	
+a	xrg	Scutum	shie		2	3	invlrg	invxrgu	invxrgu	0	0	62	0	0	0		3	25	71		53	61	0	0	0	0	2	lrg	xrg	urg	42			1	xrg					0	
+a	xit	Dragon Shield	shie		2	3	invkit	invkitu	invkitu	0	0	76	0	0	0		3	25	91		59	67	0	0	0	0	2	kit	xit	uit	45			1	xit					0	
+a	xow	Pavise	shie		2	3	invtow	invtowu	invtowu	0	0	72	0	0	0		3	25	133		68	78	0	0	0	0	2	tow	xow	uow	50			1	xow					0	
+a	xts	Ancient Shield	shie		2	4	invgts	invgtsu	invgtsu	0	0	80	0	0	0		3	25	110		80	93	0	0	0	0	2	gts	xts	uts	56			1	xts					0	
+a	xlg	Demonhide Gloves	glov		2	2	invlgl			0	0	12	0	0	0		0	21	20		28	35	0	0	0	0	8	lgl	xlg	ulg	33			1	xlg					0	
+a	xvg	Sharkskin Gloves	glov		2	2	invvgl			0	0	14	0	0	0		0	25	20		33	39	0	0	0	0	8	vgl	xvg	uvg	39			1	xvg					0	
+a	xmg	Heavy Bracers	glov		2	2	invmgl			0	0	16	0	0	0		0	25	58		37	44	0	0	0	0	8	mgl	xmg	umg	43			1	xmg					0	
+a	xtg	Battle Gauntlets	glov		2	2	invtgl			0	0	18	0	0	0		0	25	88		39	47	0	0	0	0	8	tgl	xtg	utg	49			1	xtg					0	
+a	xhg	War Gauntlets	glov		2	2	invhgl			0	0	24	0	0	0		0	25	110		43	53	0	0	0	0	8	hgl	xhg	uhg	54			1	xhg					0	
+a	xlb	Demonhide Boots	boot		2	2	invlbt			0	0	12	0	0	0		0	24	20		28	35	0	0	0	0	8	lbt	xlb	ulb	36			1	xlb					0	
+a	xvb	Sharkskin Boots	boot		2	2	invvbt			0	0	14	0	0	0		0	25	47		33	39	0	0	0	0	8	vbt	xvb	uvb	39			1	xvb					0	
+a	xmb	Mesh Boots	boot		2	2	invmbt			0	0	16	0	0	0		0	25	65		37	44	0	0	0	0	8	mbt	xmb	umb	43			1	xmb					0	
+a	xtb	Battle Boots	boot		2	2	invtbt			0	0	18	0	0	0		0	25	95		39	47	0	0	0	0	8	tbt	xtb	utb	49			1	xtb					0	
+a	xhb	War Boots	boot		2	2	invhbt			0	0	24	0	0	0		0	25	125		43	53	0	0	0	0	8	hbt	xhb	uhb	54			1	xhb					0	
+a	zlb	Demonhide Sash	belt		2	1	invlbl			0	0	12	0	0	0		0	24	20		29	34	0	0	6	0	8	lbl	zlb	ulc	36			1	zlb					0	
+a	zvb	Sharkskin Belt	belt		2	1	invvbl			0	0	14	0	0	0		0	25	20		31	36	0	0	6	0	8	vbl	zvb	uvc	39			1	zvb					0	
+a	zmb	Mesh Belt	belt		2	1	invmbl			0	0	16	0	0	0		0	25	58		35	40	0	0	6	0	8	mbl	zmb	umc	43			1	zmb					0	
+a	ztb	Battle Belt	belt		2	1	invtbl			0	0	18	0	0	0		0	25	88		37	42	0	0	6	0	8	tbl	ztb	utc	49			1	ztb					0	
+a	zhb	War Belt	belt		2	1	invhbl			0	0	24	0	0	0		0	25	110		41	52	0	0	6	0	8	hbl	zhb	uhc	54			1	zhb					0	
+a	xh9	Grim Helm	helm		2	2	invbhm	invbhmu	invbhmu	0	0	40	0	0	0		2	25	58		60	125	0	0	0	0	8	bhm	xh9	uh9	50			1	xh9					0	
+a	xsh	Grim Shield	shie		2	3	invbsh	invxshu	invxshu	0	0	70	0	0	0		2	25	58		50	150	0	0	0	0	8	bsh	xsh	ush	48			1	xsh					0	
+a	xpk	Barbed Shield	shie		2	3	invspk	invxpku	invxpku	0	0	55	0	0	0		2	25	65		58	78	0	0	0	0	8	spk	xpk	upk	42			1	xpk					0	
+a	dr1	Wolf Head	pelt		2	2	invdr1			0	0	20	0	0	0		3	3	16		8	11	0	0	0	100	8	dr1	dr6	drb	4			1	dr1					0	
+a	dr2	Hawk Helm	pelt		2	2	invdr2			0	0	20	0	0	0		3	6	20		4	15	0	0	0	100	8	dr2	dr7	drc	8			1	dr2					0	
+a	dr3	Antlers	pelt		2	2	invdr3			0	0	20	0	0	0		3	12	24		18	24	0	0	0	100	8	dr3	dr8	drd	16			1	dr3					0	
+a	dr4	Falcon Mask	pelt		2	2	invdr4			0	0	20	0	0	0		3	15	28		12	28	0	0	0	100	8	dr4	dr9	dre	20			1	dr4					0	
+a	dr5	Spirit Mask	pelt		2	2	invdr5			0	0	20	0	0	0		3	18	30		22	35	0	0	0	100	8	dr5	dra	drf	24			1	dr5					0	
+a	ba1	Jawbone Cap	phlm		2	2	invba1			0	0	25	0	0	0		3	3	25		10	15	0	0	0	100	8	ba1	ba6	bab	4			1	ba1					0	
+a	ba2	Fanged Helm	phlm		2	2	invba2			0	0	35	0	0	0		3	6	35		15	20	0	0	0	100	8	ba2	ba7	bac	8			1	ba2					0	
+a	ba3	Horned Helm	phlm		2	2	invba3			0	0	45	0	0	0		3	12	45		25	30	0	0	0	100	8	ba3	ba8	bad	16			1	ba3					0	
+a	ba4	Assault Helmet	phlm		2	2	invba4			0	0	50	0	0	0		3	15	55		30	35	0	0	0	100	8	ba4	ba9	bae	20			1	ba4					0	
+a	ba5	Avenger Guard	phlm		2	2	invba5			0	0	55	0	0	0		3	18	65		35	50	0	0	0	100	8	ba5	baa	baf	24			1	ba5					0	
+a	pa1	Targe	ashd		2	2	invpa1			0	0	20	0	0	0		4	3	16		8	12	0	0	0	100	0	pa1	pa6	pab	4		304	1	pa1					0	
+a	pa2	Rondache	ashd		2	2	invpa2			0	0	30	0	0	0		4	6	26		10	18	0	0	0	100	0	pa2	pa7	pac	8		304	1	pa2					0	
+a	pa3	Heraldic Shield	ashd		2	4	invpa3			0	0	40	0	0	0		4	12	40		16	26	0	0	0	100	0	pa3	pa8	pad	16		304	1	pa3					0	
+a	pa4	Aerin Shield	ashd		2	4	invpa4			0	0	50	0	0	0		4	15	50		26	36	0	0	0	100	0	pa4	pa9	pae	20		304	1	pa4					0	
+a	pa5	Crown Shield	ashd		2	2	invpa5			0	0	60	0	0	0		4	18	65		30	40	0	0	0	100	0	pa5	paa	paf	24		304	1	pa5					0	
+a	ne1	Preserved Head	head		2	2	invne1			0	0	20	0	0	0		2	3	12		2	5	0	0	0	100	0	ne1	ne6	neb	4		305	1	ne1					0	
+a	ne2	Zombie Head	head		2	2	invne2			0	0	20	0	0	0		2	6	14		4	8	0	0	0	100	0	ne2	ne7	neg	8		305	1	ne2					0	
+a	ne3	Unraveller Head	head		2	2	invne3			0	0	20	0	0	0		2	12	18		6	10	0	0	0	100	0	ne3	ne8	ned	16		305	1	ne3					0	
+a	ne4	Gargoyle Head	head		2	2	invne4			0	0	20	0	0	0		2	15	20		10	16	0	0	0	100	0	ne4	ne9	nee	20		305	1	ne4					0	
+a	ne5	Demon Head	head		2	2	invne5			0	0	20	0	0	0		2	18	25		15	20	0	0	0	100	0	ne5	nea	nef	24		305	1	ne5					0	
+a	ci0	Circlet	circ		2	2	invci0			0	0	35	0	0	0		2	16	0		20	30	0	0	0	100	2	ci0	ci2	ci3	24	3		1	ci0					0	
+a	ci1	Coronet	circ		2	2	invci1			0	0	30	0	0	0		2	39	0		30	40	0	0	0	100	2	ci1	ci2	ci3	52	8		1	ci1					0	
+a	ci2	Tiara	circ		2	2	invci2			0	0	25	0	0	0		3	52	0		40	50	0	0	0	100	2	ci1	ci2	ci3	70	13		1	ci2					0	
+a	ci3	Diadem	circ		2	2	invci3			0	0	20	0	0	0		3	64	0		50	60	0	0	0	100	2	ci1	ci2	ci3	85	18		1	ci3					0	
+a	uap	Shako	helm		2	2	invcap			0	0	12	0	0	0		2	43	50		98	141	0	0	0	100	8	cap	xap	uap	58			1	uap					0	
+a	ukp	Hydraskull	helm		2	2	invskp			0	0	18	0	0	0		2	47	84		101	145	0	0	0	100	8	skp	xkp	ukp	63			1	ukp					0	
+a	ulm	Armet	helm		2	2	invhlm	invhlmu	invhlmu	0	0	24	0	0	0		2	51	109		105	149	0	0	0	100	8	hlm	xlm	ulm	68			1	ulm					0	
+a	uhl	Giant Conch	helm		2	2	invfhl	invfhlu	invfhlu	0	0	30	0	0	0		2	40	142		110	154	0	0	0	100	8	fhl	xhl	uhl	54			1	uhl					0	
+a	uhm	Spired Helm	helm		2	2	invghm		invuhms	0	0	40	0	0	0		3	59	192		114	159	0	0	0	100	8	ghm	xhm	uhm	79			1	uhm					0	
+a	urn	Corona	helm		2	2	invcrn			0	0	50	0	0	0		3	66	174		111	165	0	0	0	100	8	crn	xrn	urn	85			1	urn					0	
+a	usk	Demonhead	helm		2	2	invmsk			0	0	20	0	0	0		3	55	102		101	154	0	0	0	100	2	msk	xsk	usk	74			1	usk					0	
+a	uui	Dusk Shroud	tors		2	3	invqlt			0	0	20	0	0	0		4	49	77		361	467	0	0	0	100	8	qui	xui	uui	65			1	uui					0	
+a	uea	Wyrmhide	tors		2	3	invlea			0	0	24	0	0	0		4	50	84		364	470	0	0	0	100	8	lea	xea	uea	67			1	uea					0	
+a	ula	Scarab Husk	tors		2	3	invhla			0	0	28	0	0	0		4	51	95		369	474	0	0	0	100	8	hla	xla	ula	68			1	ula					0	
+a	utu	Wire Fleece	tors		2	3	invstu			0	0	32	0	0	0		4	53	111		375	481	0	0	0	100	8	stu	xtu	utu	70			1	utu					0	
+a	ung	Diamond Mail	tors		2	3	invrng			0	0	26	0	0	0		4	54	131		383	489	0	0	0	100	8	rng	xng	ung	72			1	ung					0	
+a	ucl	Loricated Mail	tors		2	3	invscl			0	0	36	0	0	0		4	55	149		390	496	0	0	0	100	8	scl	xcl	ucl	73			1	ucl					0	
+a	uhn	Boneweave	tors		2	3	invchn			0	0	45	0	0	0		4	47	158		399	505	0	0	0	100	8	chn	xhn	uhn	62			1	uhn					0	
+a	urs	Great Hauberk	tors		2	3	invbrs			0	0	50	0	0	0		4	56	118		395	501	0	0	0	100	8	brs	xrs	urs	75			1	urs					0	
+a	upl	Balrog Skin	tors		2	3	invspl			0	0	30	0	0	0		4	57	165		410	517	0	0	0	100	8	spl	xpl	upl	76			1	upl					0	
+a	ult	Hellforge Plate	tors		2	3	invplt			0	0	60	0	0	0		4	59	196		421	530	0	0	0	100	8	plt	xlt	ult	78			1	ult					0	
+a	uld	Kraken Shell	tors		2	3	invfld			0	0	48	0	0	0		4	61	174		417	523	0	0	0	100	8	fld	xld	uld	81			1	uld					0	
+a	uth	Lacquered Plate	tors		2	3	invgth			0	0	55	0	0	0		4	62	208		433	541	0	0	0	100	8	gth	xth	uth	82			1	uth					0	
+a	uul	Shadow Plate	tors		2	3	invful			0	0	70	0	0	0		4	64	230		446	557	0	0	0	100	8	ful	xul	uul	83			1	uul					0	
+a	uar	Sacred Armor	tors		2	3	invaar	invaaru	invaaru	0	0	60	0	0	0		4	66	232		487	600	0	0	0	100	8	aar	xar	uar	85			1	uar					0	
+a	utp	Archon Plate	tors		2	3	invltp			0	0	60	0	0	0		4	63	103		410	524	0	0	0	100	8	ltp	xtp	utp	84			1	utp					0	
+a	uuc	Heater	shie		2	2	invbuc	invbucu	invbucu	0	0	88	0	0	0		2	43	77		95	110	0	0	0	100	8	buc	xuc	uuc	58			1	uuc					0	
+a	uml	Luna	shie		2	2	invsml	invsmlu	invsmlu	0	0	84	0	0	0		2	45	100		108	123	0	0	0	100	5	sml	xml	uml	61			1	uml					0	
+a	urg	Hyperion	shie		2	3	invlrg	invlrgu	invlrgu	0	0	82	0	0	0		3	48	127		119	135	0	0	0	100	2	lrg	xrg	urg	64			1	urg					0	
+a	uit	Monarch	shie		2	3	invkit	invkitu	invkitu	0	0	86	0	0	0		4	54	156		133	148	0	0	0	100	2	kit	xit	uit	72			1	uit					0	
+a	uow	Aegis	shie		2	3	invtow	invtowu	invtowu	0	0	92	0	0	0		4	59	219		145	161	0	0	0	100	2	tow	xow	uow	79			1	uow					0	
+a	uts	Ward	shie		2	4	invgts	invgtsu	invutss	0	0	100	0	0	0		4	63	185		153	170	0	0	0	100	2	gts	xts	uts	84			1	uts					0	
+a	ulg	Bramble Mitts	glov		2	2	invlgl			0	0	12	0	0	0		0	42	50		54	62	0	0	0	100	8	lgl	xlg	ulg	57			1	ulg					0	
+a	uvg	Vampirebone Gloves	glov		2	2	invvgl			0	0	14	0	0	0		0	47	50		56	65	0	0	0	100	8	vgl	xvg	uvg	63			1	uvg					0	
+a	umg	Vambraces	glov		2	2	invmgl			0	0	16	0	0	0		0	51	106		59	67	0	0	0	100	8	mgl	xmg	umg	69			1	umg					0	
+a	utg	Crusader Gauntlets	glov		2	2	invtgl			0	0	18	0	0	0		0	57	151		59	68	0	0	0	100	8	tgl	xtg	utg	76			1	utg					0	
+a	uhg	Ogre Gauntlets	glov		2	2	invhgl			0	0	24	0	0	0		0	64	185		62	71	0	0	0	100	8	hgl	xhg	uhg	85			1	uhg					0	
+a	ulb	Wyrmhide Boots	boot		2	2	invlbt			0	0	12	0	0	0		0	45	50		54	62	0	0	0	100	8	lbt	xlb	ulb	60			1	ulb					0	
+a	uvb	Scarabshell Boots	boot		2	2	invvbt			0	0	14	0	0	0		0	49	91		56	65	0	0	0	100	8	vbt	xvb	uvb	66			1	uvb					0	
+a	umb	Boneweave Boots	boot		2	2	invmbt			0	0	16	0	0	0		0	54	118		59	67	0	0	0	100	8	mbt	xmb	umb	72			1	umb					0	
+a	utb	Mirrored Boots	boot		2	2	invtbt			0	0	18	0	0	0		0	60	163		59	68	0	0	0	100	8	tbt	xtb	utb	81			1	utb					0	
+a	uhb	Myrmidon Greaves	boot		2	2	invhbt			0	0	24	0	0	0		0	65	208		62	71	0	0	0	100	8	hbt	xhb	uhb	85			1	uhb					0	
+a	ulc	Spiderweb Sash	belt		2	1	invlbl			0	0	12	0	0	0		0	46	50		55	62	0	0	6	100	8	lbl	zlb	ulc	61			1	ulc					0	
+a	uvc	Vampirefang Belt	belt		2	1	invvbl			0	0	14	0	0	0		0	51	50		56	63	0	0	6	100	8	vbl	zvb	uvc	68			1	uvc					0	
+a	umc	Mithril Coil	belt		2	1	invmbl			0	0	16	0	0	0		0	56	106		58	65	0	0	6	100	8	mbl	zmb	umc	75			1	umc					0	
+a	utc	Troll Belt	belt		2	1	invtbl			0	0	18	0	0	0		0	62	151		59	66	0	0	6	100	8	tbl	ztb	utc	82			1	utc					0	
+a	uhc	Colossus Girdle	belt		2	1	invhbl			0	0	24	0	0	0		0	67	185		61	71	0	0	6	100	8	hbl	zhb	uhc	85			1	uhc					0	
+a	uh9	Bone Visage	helm		2	2	invbhm	invbhmu	invbhmu	0	0	40	0	0	0		3	63	106		100	157	0	0	0	100	8	bhm	xh9	uh9	84			1	uh9					0	
+a	ush	Troll Nest	shie		2	3	invbsh	invbshu	invbshu	0	0	74	0	0	0		3	57	106		158	173	0	0	0	100	8	bsh	xsh	ush	76			1	ush					0	
+a	upk	Blade Barrier	shie		2	3	invspk	invspku	invspku	0	0	83	0	0	0		3	51	118		147	163	0	0	0	100	8	spk	xpk	upk	68			1	upk					0	
+a	dr6	Alpha Helm	pelt		2	2	invdr1			0	0	20	0	0	0		3	26	44		52	62	0	0	0	100	8	dr1	dr6	drb	35			1	dr6					0	
+a	dr7	Griffon Headdress	pelt		2	2	invdr2			0	0	20	0	0	0		3	30	50		46	68	0	0	0	100	8	dr2	dr7	drc	40			1	dr7					0	
+a	dr8	Hunter's Guise	pelt		2	2	invdr3			0	0	20	0	0	0		3	29	56		67	81	0	0	0	100	8	dr3	dr8	drd	46			1	dr8					0	
+a	dr9	Sacred Feathers	pelt		2	2	invdr4			0	0	20	0	0	0		3	32	62		58	87	0	0	0	100	8	dr4	dr9	dre	50			1	dr9					0	
+a	dra	Totemic Mask	pelt		2	2	invdr5			0	0	20	0	0	0		3	41	65		73	98	0	0	0	100	8	dr5	dra	drf	55			1	dra					0	
+a	ba6	Jawbone Visor	phlm		2	2	invba1			0	0	25	0	0	0		3	25	58		55	68	0	0	0	100	0	ba1	ba6	bab	33			1	ba6					0	
+a	ba7	Lion Helm	phlm		2	2	invba2			0	0	35	0	0	0		3	29	73		63	75	0	0	0	100	0	ba2	ba7	bac	38			1	ba7					0	
+a	ba8	Rage Mask	phlm		2	2	invba3			0	0	45	0	0	0		3	29	88		78	90	0	0	0	100	0	ba3	ba8	bad	44			1	ba8					0	
+a	ba9	Savage Helmet	phlm		2	2	invba4			0	0	50	0	0	0		3	32	103		85	98	0	0	0	100	0	ba4	ba9	bae	49			1	ba9					0	
+a	baa	Slayer Guard	phlm		2	2	invba5			0	0	55	0	0	0		3	40	118		93	120	0	0	0	100	0	ba5	baa	baf	54			1	baa					0	
+a	pa6	Akaran Targe	ashd		2	2	invpa1			0	0	20	0	0	0		4	26	44		101	125	0	0	0	100	0	pa1	pa6	pab	35		304	1	pa6					0	
+a	pa7	Akaran Rondache	ashd		2	2	invpa2			0	0	30	0	0	0		4	30	59		113	137	0	0	0	100	0	pa2	pa7	pac	40		304	1	pa7					0	
+a	pa8	Protector Shield	ashd		2	4	invpa3			0	0	40	0	0	0		4	34	69		129	153	0	0	0	100	0	pa3	pa8	pad	46		304	1	pa8					0	
+a	pa9	Gilded Shield	ashd		2	4	invpa4			0	0	50	0	0	0		4	38	89		144	168	0	0	0	100	0	pa4	pa9	pae	51		304	1	pa9					0	
+a	paa	Royal Shield	ashd		2	2	invpa5			0	0	60	0	0	0		4	41	114		156	181	0	0	0	100	0	pa5	paa	paf	55		304	1	paa					0	
+a	ne6	Mummified Trophy	head		2	2	invne1			0	0	20	0	0	0		2	24	38		38	48	0	0	0	100	0	ne1	ne6	neb	33		305	1	ne6					0	
+a	ne7	Fetish Trophy	head		2	2	invne2			0	0	20	0	0	0		2	29	41		41	52	0	0	0	100	0	ne2	ne7	neg	39		305	1	ne7					0	
+a	ne8	Sexton Trophy	head		2	2	invne3			0	0	20	0	0	0		2	33	47		44	55	0	0	0	100	0	ne3	ne8	ned	45		305	1	ne8					0	
+a	ne9	Cantor Trophy	head		2	2	invne4			0	0	20	0	0	0		2	36	50		50	64	0	0	0	100	0	ne4	ne9	nee	49		305	1	ne9					0	
+a	nea	Hierophant Trophy	head		2	2	invne5			0	0	20	0	0	0		2	40	58		58	70	0	0	0	100	0	ne5	nea	nef	54		305	1	nea					0	
+a	drb	Blood Spirit	pelt		2	2	invdr1			0	0	20	0	0	0		3	46	86		101	145	0	0	0	100	8	dr1	dr6	drb	62			1	drb					0	
+a	drc	Sun Spirit	pelt		2	2	invdr2			0	0	20	0	0	0		3	51	95		98	147	0	0	0	100	8	dr2	dr7	drc	69			1	drc					0	
+a	drd	Earth Spirit	pelt		2	2	invdr3			0	0	20	0	0	0		3	57	104		107	152	0	0	0	100	8	dr3	dr8	drd	76			1	drd					0	
+a	dre	Sky Spirit	pelt		2	2	invdr4			0	0	20	0	0	0		3	62	113		103	155	0	0	0	100	8	dr4	dr9	dre	83			1	dre					0	
+a	drf	Dream Spirit	pelt		2	2	invdr5			0	0	20	0	0	0		3	66	118		109	159	0	0	0	100	8	dr5	dra	drf	85			1	drf					0	
+a	bab	Carnage Helm	phlm		2	2	invba1			0	0	25	0	0	0		3	45	106		102	147	0	0	0	100	0	ba1	ba6	bab	60			1	bab					0	
+a	bac	Fury Visor	phlm		2	2	invba2			0	0	35	0	0	0		3	49	129		105	150	0	0	0	100	0	ba2	ba7	bac	66			1	bac					0	
+a	bad	Destroyer Helm	phlm		2	2	invba3			0	0	45	0	0	0		3	54	151		111	156	0	0	0	100	0	ba3	ba8	bad	73			1	bad					0	
+a	bae	Conqueror Crown	phlm		2	2	invba4			0	0	50	0	0	0		3	60	174		114	159	0	0	0	100	0	ba4	ba9	bae	80			1	bae					0	
+a	baf	Guardian Crown	phlm		2	2	invba5			0	0	55	0	0	0		3	65	196		117	168	0	0	0	100	0	ba5	baa	baf	85			1	baf					0	
+a	pab	Sacred Targe	ashd		2	2	invpa1			0	0	45	0	0	0		4	47	86		126	158	0	0	0	100	0	pa1	pa6	pab	63		304	1	pab					0	
+a	pac	Sacred Rondache	ashd		2	2	invpa2			0	0	68	0	0	0		4	52	109		138	164	0	0	0	100	0	pa2	pa7	pac	70		304	1	pac					0	
+a	pad	Kurast Shield	ashd		2	4	invpa3			0	0	55	0	0	0		4	55	124		154	172	0	0	0	100	0	pa3	pa8	pad	74		304	1	pad					0	
+a	pae	Zakarum Shield	ashd		2	4	invpa4			0	0	65	0	0	0		4	61	142		169	193	0	0	0	100	0	pa4	pa9	pae	82		304	1	pae					0	
+a	paf	Vortex Shield	ashd		2	2	invpa5			0	0	90	0	0	0		4	66	148		182	225	0	0	0	100	0	pa5	paa	paf	85		304	1	paf					0	
+a	neb	Minion Skull	head		2	2	invne1			0	0	20	0	0	0		2	44	77		95	139	0	0	0	100	0	ne1	ne6	neb	59		305	1	neb					0	
+a	neg	Hellspawn Skull	head		2	2	invne2			0	0	20	0	0	0		2	50	82		96	141	0	0	0	100	0	ne2	ne7	neg	67		305	1	neg					0	
+a	ned	Overseer Skull	head		2	2	invne3			0	0	20	0	0	0		2	49	91		98	142	0	0	0	100	0	ne3	ne8	ned	66		305	1	ned					0	
+a	nee	Succubus Skull	head		2	2	invne4			0	0	20	0	0	0		2	60	95		100	146	0	0	0	100	0	ne4	ne9	nee	81		305	1	nee					0	
+a	nef	Bloodlord Skull	head		2	2	invne5			0	0	20	0	0	0		2	65	106		103	148	0	0	0	100	0	ne5	nea	nef	85		305	1	nef					0	
+m	elx	Elixir	elix		1	1	invpot			0	0		1		1		0	0							0	0	0				21			1	elx					0	0
+m	hpo	Healing Potion	hpot		1	1	invrps			0	0		1		1		0	0							1	0	0				0			0	hpo					0	0
+m	mpo	Mana Potion	mpot		1	1	invbps			0	0		1		1		0	0							1	0	0				0			0	mpo					0	0
+m	hpf	Full Healing Potion	hpot		1	1	invrpl			0	0		1		1		0	0							1	0	0				0			0	hpf					0	0
+m	mpf	Full Mana Potion	mpot		1	1	invbpl			0	0		1		1		0	0							1	0	0				0			0	mpf					0	0
+m	vps	Stamina Potion	spot		1	1	invwps			0	0		1		1		0	0							1	0	0				0			1	vps					0	0
+m	yps	Antidote Potion	apot		1	1	invnps			0	0		1		1		0	0							1	0	0				0			1	yps					0	0
+m	rvs	Rejuvenation Potion	rpot		1	1	invvps			0	0		1		1		0	0							1	0	0				0			0	rvs					0	0
+m	rvl	Full Rejuvenation Potion	rpot		1	1	invvpl			0	0		1		1		0	0							1	0	0				0			0	rvl					0	0
+m	wms	Thawing Potion	wpot		1	1	invyps			0	0		1		1		0	0							1	0	0				0			1	wms					0	0
+m	tbk	Tome of Town Portal	book		1	2	invbbk			1	20		1		0		0	0							0	0	0				0			1	tbk					1	5
+m	ibk	Tome of Identify	book		1	2	invrbk			1	20		1		0		0	0							0	0	0				0			1	ibk					1	5
+m	amu	Amulet	amul		1	1	invamu			0	0		1		0		1	0							0	0	0				1			1	amu					0	0
+m	vip	Top of the Horadric Staff	amul		1	1	invvip	invvip		0	0		1	10	0	1	0	0							0	0	0				15			0	vip					0	0
+m	rin	Ring	ring		1	1	invrin			0	0		1		0		1	0							0	0	0				1			1	rin					0	0
+m	gld	Gold	gold		1	1	invgld			1	5000		1		1		0	0							0	0	0				0			1	gld					0	0
+m	bks	Scroll of Inifuss	ques		2	2	invscb			0	0		1	5	1	1	0	0							0	0	0				0			0	bks					0	0
+m	bkd	Key to the Cairn Stones	ques		2	2	invscb			0	0		1	5	1	1	0	0							0	0	0				0			0	bkd					0	0
+m	aqv	Arrows	bowq		1	3	invqvr			1	350		1		0		0	0							0	0	0				0			1	aqv					100	200
+m	tch	Torch	torc		1	2	invtrch			0	10		1		1		0	0							0	0	0				0			0	tch					2	0
+m	cqv	Bolts	xboq		1	3	invcqv			1	250		1		0		0	0							0	0	0				0			1	cqv					60	150
+m	tsc	Scroll of Town Portal	scro		1	1	invbsc			0	0		1		1		0	0							1	0	0				0			1	tsc					0	0
+m	isc	Scroll of Identify	scro		1	1	invrsc			0	0		1		1		0	0							1	0	0				0			1	isc					0	0
+m	hrt	Heart	body		1	1	invhrt			0	0		1		0		0	0							0	0	0				0			0	hrt					0	0
+m	brz	Brain	body		1	1	invbrnz			0	0		1		0		0	0							0	0	0				0			0	brz					0	0
+m	jaw	Jawbone	body		1	1	invjaw			0	0		1		0		0	0							0	0	0				0			0	jaw					0	0
+m	eyz	Eye	body		1	1	inveye			0	0		1		0		0	0							0	0	0				0			0	eyz					0	0
+m	hrn	Horn	body		1	1	invhorn			0	0		1		0		0	0							0	0	0				0			0	hrn					0	0
+m	tal	Tail	body		1	1	invtail			0	0		1		0		0	0							0	0	0				0			0	tal					0	0
+m	flg	Flag	body		1	1	invflag			0	0		1		0		0	0							0	0	0				0			0	flg					0	0
+m	fng	Fang	body		1	1	invfang			0	0		1		0		0	0							0	0	0				0			0	fng					0	0
+m	qll	Quill	body		1	1	invquil			0	0		1		0		0	0							0	0	0				0			0	qll					0	0
+m	sol	Soul	body		1	1	invsple			0	0		1		0		0	0							0	0	0				0			0	sol					0	0
+m	scz	Scalp	body		1	1	invscp			0	0		1		0		0	0							0	0	0				0			0	scz					0	0
+m	spe	Spleen	body		1	1	invsple			0	0		1		0		0	0							0	0	0				0			0	spe					0	0
+m	key	Key	key		1	1	invkey			1	12		1		0		0	0							0	0	0				0			1	key					1	6
+m	luv	The Black Tower Key	key		1	2	invmph			0	0		1	20	0	1	0	0							0	0	0				0			0	luv					0	0
+m	xyz	Potion of Life	ques		1	1	invxyz			0	0		1	19	0	1	0	0							0	0	0				0			0	xyz					0	0
+m	j34	A Jade Figurine	ques		1	2	invjbi			0	0		1	19	1	1	0	0							0	0	0				0			0	j34					0	0
+m	g34	The Golden Bird	ques		1	2	invgbi			0	0		1	19	1	1	0	0							0	0	0				0			0	g34					0	0
+m	bbb	Lam Esen's Tome	ques		2	2	invbbb			0	0		1	16	1	1	0	0							0	0	0				0			0	bbb					0	0
+m	box	Horadric Cube	ques		2	2	invbox			0	0		1	10	0		0	0							0	0	0				0			0	box					0	0
+m	tr1	Horadric Scroll	ques		2	2	invhscr			0	0		1	10	1	1	0	0							0	0	0				0			0	tr1					0	0
+m	mss	Mephisto's Soulstone	ques		1	1	invmss			0	0		1	23	1	1	0	0							0	0	0				0			0	mss					0	0
+m	ass	Book of Skill	ques		2	2	invsbk			0	0		1	15	1	1	0	0							0	0	0				0			0	ass					0	0
+m	qey	Khalim's Eye	ques		1	1	inveye			0	0		1	17	1	1	0	0							0	0	0				0			0	qey					0	0
+m	qhr	Khalim's Heart	ques		1	1	invhrt			0	0		1	17	1	1	0	0							0	0	0				0			0	qhr					0	0
+m	qbr	Khalim's Brain	ques		1	1	invbrnz			0	0		1	17	1	1	0	0							0	0	0				0			0	qbr					0	0
+m	ear	Ear	play		1	1	invear			0	0		1		1		0	0							0	0	0				0			0	ear					0	0
+m	gcv	Chipped Amethyst	gema	gem0	1	1	invgsva			0	0		1		1		0	1							0	0	0				0			1	gcv					0	0
+m	gfv	Flawed Amethyst	gema	gem1	1	1	invgsvb			0	0		1		1		0	5							0	0	0				0			1	gfv					0	0
+m	gsv	Amethyst	gema	gem2	1	1	invgsvc			0	0		1		1		0	12							0	0	0				0			1	gsv					0	0
+m	gzv	Flawless Amethyst	gema	gem3	1	1	invgsvd			0	0		1		1		0	15							0	0	0				0			1	gzv					0	0
+m	gpv	Perfect Amethyst	gema	gem4	1	1	invgsve			0	0		1		1		0	18							0	0	0				0			1	gpv					0	0
+m	gcy	Chipped Topaz	gemt	gem0	1	1	invgsya			0	0		1		1		0	1							0	0	0				0			1	gcy					0	0
+m	gfy	Flawed Topaz	gemt	gem1	1	1	invgsyb			0	0		1		1		0	5							0	0	0				0			1	gfy					0	0
+m	gsy	Topaz	gemt	gem2	1	1	invgsyc			0	0		1		1		0	12							0	0	0				0			1	gsy					0	0
+m	gly	Flawless Topaz	gemt	gem3	1	1	invgsyd			0	0		1		1		0	15							0	0	0				0			1	gly					0	0
+m	gpy	Perfect Topaz	gemt	gem4	1	1	invgsye			0	0		1		1		0	18							0	0	0				0			1	gpy					0	0
+m	gcb	Chipped Sapphire	gems	gem0	1	1	invgsba			0	0		1		1		0	1							0	0	0				0			1	gcb					0	0
+m	gfb	Flawed Sapphire	gems	gem1	1	1	invgsbb			0	0		1		1		0	5							0	0	0				0			1	gfb					0	0
+m	gsb	Sapphire	gems	gem2	1	1	invgsbc			0	0		1		1		0	12							0	0	0				0			1	gsb					0	0
+m	glb	Flawless Sapphire	gems	gem3	1	1	invgsbd			0	0		1		1		0	15							0	0	0				0			1	glb					0	0
+m	gpb	Perfect Sapphire	gems	gem4	1	1	invgsbe			0	0		1		1		0	18							0	0	0				0			1	gpb					0	0
+m	gcg	Chipped Emerald	geme	gem0	1	1	invgsga			0	0		1		1		0	1							0	0	0				0			1	gcg					0	0
+m	gfg	Flawed Emerald	geme	gem1	1	1	invgsgb			0	0		1		1		0	5							0	0	0				0			1	gfg					0	0
+m	gsg	Emerald	geme	gem2	1	1	invgsgc			0	0		1		1		0	12							0	0	0				0			1	gsg					0	0
+m	glg	Flawless Emerald	geme	gem3	1	1	invgsgd			0	0		1		1		0	15							0	0	0				0			1	glg					0	0
+m	gpg	Perfect Emerald	geme	gem4	1	1	invgsge			0	0		1		1		0	18							0	0	0				0			1	gpg					0	0
+m	gcr	Chipped Ruby	gemr	gem0	1	1	invgsra			0	0		1		1		0	1							0	0	0				0			1	gcr					0	0
+m	gfr	Flawed Ruby	gemr	gem1	1	1	invgsrb			0	0		1		1		0	5							0	0	0				0			1	gfr					0	0
+m	gsr	Ruby	gemr	gem2	1	1	invgsrc			0	0		1		1		0	12							0	0	0				0			1	gsr					0	0
+m	glr	Flawless Ruby	gemr	gem3	1	1	invgsrd			0	0		1		1		0	15							0	0	0				0			1	glr					0	0
+m	gpr	Perfect Ruby	gemr	gem4	1	1	invgsre			0	0		1		1		0	18							0	0	0				0			1	gpr					0	0
+m	gcw	Chipped Diamond	gemd	gem0	1	1	invgswa			0	0		1		1		0	1							0	0	0				0			1	gcw					0	0
+m	gfw	Flawed Diamond	gemd	gem1	1	1	invgswb			0	0		1		1		0	5							0	0	0				0			1	gfw					0	0
+m	gsw	Diamond	gemd	gem2	1	1	invgswc			0	0		1		1		0	12							0	0	0				0			1	gsw					0	0
+m	glw	Flawless Diamond	gemd	gem3	1	1	invgswd			0	0		1		1		0	15							0	0	0				0			1	glw					0	0
+m	gpw	Perfect Diamond	gemd	gem4	1	1	invgswe			0	0		1		1		0	18							0	0	0				0			1	gpw					0	0
+m	hp1	Minor Healing Potion	hpot		1	1	invhp1			0	0		1		1		0	0							1	0	0				0			1	hp1					0	0
+m	hp2	Light Healing Potion	hpot		1	1	invhp2			0	0		1		1		0	0							1	0	0				0			1	hp2					0	0
+m	hp3	Healing Potion	hpot		1	1	invhp3			0	0		1		1		0	0							1	0	0				0			1	hp3					0	0
+m	hp4	Greater Healing Potion	hpot		1	1	invhp4			0	0		1		1		0	0							1	0	0				0			1	hp4					0	0
+m	hp5	Super Healing Potion	hpot		1	1	invhp5			0	0		1		1		0	0							1	0	0				0			1	hp5					0	0
+m	mp1	Minor Mana Potion	mpot		1	1	invmp1			0	0		1		1		0	0							1	0	0				0			1	mp1					0	0
+m	mp2	Light Mana Potion	mpot		1	1	invmp2			0	0		1		1		0	0							1	0	0				0			1	mp2					0	0
+m	mp3	Mana Potion	mpot		1	1	invmp3			0	0		1		1		0	0							1	0	0				0			1	mp3					0	0
+m	mp4	Greater Mana Potion	mpot		1	1	invmp4			0	0		1		1		0	0							1	0	0				0			1	mp4					0	0
+m	mp5	Super Mana Potion	mpot		1	1	invmp5			0	0		1		1		0	0							1	0	0				0			1	mp5					0	0
+m	skc	Chipped Skull	gemz	gem0	1	1	invskc			0	0		1		1		0	1							0	0	0				0			1	skc					0	0
+m	skf	Flawed Skull	gemz	gem1	1	1	invskf			0	0		1		1		0	5							0	0	0				0			1	skf					0	0
+m	sku	Skull	gemz	gem2	1	1	invsku			0	0		1		1		0	12							0	0	0				0			1	sku					0	0
+m	skl	Flawless Skull	gemz	gem3	1	1	invskl			0	0		1		1		0	15							0	0	0				0			1	skl					0	0
+m	skz	Perfect Skull	gemz	gem4	1	1	invskz			0	0		1		1		0	18							0	0	0				0			1	skz					0	0
+m	hrb	Herb	herb		1	1	invhrb			0	0		1		0		0	0							1	100	0				3			0	hrb					0	0
+m	cm1	Small Charm	scha		1	1	invchm			0	0		1		0		0	0							0	100	0				28			1	cm1					0	0
+m	cm2	Large Charm	mcha		1	2	invwnd			0	0		1		0		0	0							0	100	0				14			1	cm2					0	0
+m	cm3	Grand Charm	lcha		1	3	invsst			0	0		1		0		0	0							0	100	0				1			1	cm3					0	0
+m	rps	Small Red Potion	hpot		1	1	invrps			1	10		1		1		0	0							0	100	0				0			0	rps					5	0
+m	rpl	Large Red Potion	hpot		1	1	invrpl			1	10		1		1		0	0							0	100	0				0			0	rpl					5	0
+m	bps	Small Blue Potion	mpot		1	1	invbps			1	10		1		1		0	0							0	100	0				0			0	bps					5	0
+m	bpl	Large Blue Potion	mpot		1	1	invbpl			1	10		1		1		0	0							0	100	0				0			0	bpl					5	0
+m	r01	El Rune	rune		1	1	invrEl			0	0		1		1		0	11							0	100	0				11			1	r01					0	0
+m	r02	Eld Rune	rune		1	1	invrEld			0	0		1		1		0	11							0	100	0				11			1	r02					0	0
+m	r03	Tir Rune	rune		1	1	invrTir			0	0		1		1		0	13							0	100	0				13			1	r03					0	0
+m	r04	Nef Rune	rune		1	1	invrNef			0	0		1		1		0	13							0	100	0				13			1	r04					0	0
+m	r05	Eth Rune	rune		1	1	invrEth			0	0		1		1		0	15							0	100	0				15			1	r05					0	0
+m	r06	Ith Rune	rune		1	1	invrIth			0	0		1		1		0	15							0	100	0				15			1	r06					0	0
+m	r07	Tal Rune	rune		1	1	invrTal			0	0		1		1		0	17							0	100	0				17			1	r07					0	0
+m	r08	Ral Rune	rune		1	1	invrRal			0	0		1		1		0	19							0	100	0				19			1	r08					0	0
+m	r09	Ort Rune	rune		1	1	invrOrt			0	0		1		1		0	21							0	100	0				21			1	r09					0	0
+m	r10	Thul Rune	rune		1	1	invrThul			0	0		1		1		0	23							0	100	0				23			1	r10					0	0
+m	r11	Amn Rune	rune		1	1	invrAmn			0	0		1		1		0	25							0	100	0				25			1	r11					0	0
+m	r12	Sol Rune	rune		1	1	invrSol			0	0		1		1		0	27							0	100	0				27			1	r12					0	0
+m	r13	Shael Rune	rune		1	1	invrShae			0	0		1		1		0	29							0	100	0				29			1	r13					0	0
+m	r14	Dol Rune	rune		1	1	invrDol			0	0		1		1		0	31							0	100	0				31			1	r14					0	0
+m	r15	Hel Rune	rune		1	1	invrHel			0	0		1		1		0	0							0	100	0				33			1	r15					0	0
+m	r16	Io Rune	rune		1	1	invrIo			0	0		1		1		0	35							0	100	0				35			1	r16					0	0
+m	r17	Lum Rune	rune		1	1	invrLum			0	0		1		1		0	37							0	100	0				37			1	r17					0	0
+m	r18	Ko Rune	rune		1	1	invrKo			0	0		1		1		0	39							0	100	0				39			1	r18					0	0
+m	r19	Fal Rune	rune		1	1	invrFal			0	0		1		1		0	41							0	100	0				41			1	r19					0	0
+m	r20	Lem Rune	rune		1	1	invrLem			0	0		1		1		0	43							0	100	0				43			1	r20					0	0
+m	r21	Pul Rune	rune		1	1	invrPul			0	0		1		1		0	45							0	100	0				45			1	r21					0	0
+m	r22	Um Rune	rune		1	1	invrUm			0	0		1		1		0	47							0	100	0				47			1	r22					0	0
+m	r23	Mal Rune	rune		1	1	invrMal			0	0		1		1		0	49							0	100	0				49			1	r23					0	0
+m	r24	Ist Rune	rune		1	1	invrIst			0	0		1		1		0	51							0	100	0				51			1	r24					0	0
+m	r25	Gul Rune	rune		1	1	invrGul			0	0		1		1		0	53							0	100	0				53			1	r25					0	0
+m	r26	Vex Rune	rune		1	1	invrVex			0	0		1		1		0	55							0	100	0				55			1	r26					0	0
+m	r27	Ohm Rune	rune		1	1	invrOhm			0	0		1		1		0	57							0	100	0				57			1	r27					0	0
+m	r28	Lo Rune	rune		1	1	invrLo			0	0		1		1		0	59							0	100	0				59			1	r28					0	0
+m	r29	Sur Rune	rune		1	1	invrSur			0	0		1		1		0	61							0	100	0				61			1	r29					0	0
+m	r30	Ber Rune	rune		1	1	invrBer			0	0		1		1		0	63							0	100	0				63			1	r30					0	0
+m	r31	Jah Rune	rune		1	1	invrJo			0	0		1		1		0	65							0	100	0				65			1	r31					0	0
+m	r32	Cham Rune	rune		1	1	invrCham			0	0		1		1		0	67							0	100	0				67			1	r32					0	0
+m	r33	Zod Rune	rune		1	1	invrZod			0	0		1		1		0	69							0	100	0				69			1	r33					0	0
+m	jew	Jewel	jewl		1	1	invgswe			0	0		1		0		0	0							0	100	0				1			1	jew					0	0
+m	ice	Malah's Potion	ques		1	1	invxyz			0	0		1	32	0	1	0	0							0	100	0				0			0	ice					0	0
+m	0sc	Scroll of Knowledge	scro		1	1	invrsc			0	0		1		0		0	0							0	100	0				0			1	0sc					0	0
+m	tr2	Scroll of Resistance	ques		2	2	invscb			0	0		1	32	1	1	0	0							0	100	0				0			0	tr2					0	0
+m	pk1	Key of Terror	ques		1	2	invmph			0	0		1		0		0	0							0	100	0				0			0	pk1					0	0
+m	pk2	Key of Hate	ques		1	2	invmph			0	0		1		0		0	0							0	100	0				0			0	pk2					0	0
+m	pk3	Key of Destruction	ques		1	2	invmph			0	0		1		0		0	0							0	100	0				0			0	pk3					0	0
+m	dhn	Diablo's Horn	ques		1	1	invfang			0	0		1		0		0	0							0	100	0				0			0	dhn					0	0
+m	bey	Baal's Eye	ques		1	1	inveye			0	0		1		0		0	0							0	109	0				0			0	bey					0	0
+m	mbr	Mephisto's Brain	ques		1	1	invbrnz			0	0		1		0		0	0							0	100	0				0			0	mbr					0	0
+m	toa	Token of Absolution	ques		1	1	invtoa			0	0		1		0		0	0							0	100	0				0			0	toa					0	0
+m	tes	Twisted Essence of Suffering	ques		1	1	invtes			0	0		1		0		0	0							0	100	0				0			0	tes					0	0
+m	ceh	Charged Essence of Hatred	ques		1	1	invceh			0	0		1		0		0	0							0	100	0				0			0	ceh					0	0
+m	bet	Burning Essence of Terror	ques		1	1	invbet			0	0		1		0		0	0							0	100	0				0			0	bet					0	0
+m	fed	Festering Essence of Destruction	ques		1	1	invfed			0	0		1		0		0	0							0	100	0				0			0	fed					0	0
+m	std	Standard of Heroes	ques		1	1	invflag			0	0		1		0		0	90							0	100	0				90			1	std					0	0
