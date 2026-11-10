@@ -1,0 +1,40 @@
+[package]
+name = "d2rs"
+description = "Save editor for the game (classic and expansion, version 1.14d)"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+readme.workspace = true
+keywords = ["save-editor", "egui", "wasm", "d2s", "editor"]
+categories = ["command-line-utilities", "gui"]
+rust-version.workspace = true
+
+[lib]
+name = "d2rs_app"
+path = "src/lib.rs"
+
+[dependencies]
+d2s = { path = "../crates/d2s" }
+eframe = { version = "0.37", default-features = false, features = ["glow", "default_fonts", "wayland", "x11"] }
+rfd = "0.17"
+d2io = { path = "../crates/d2io" }
+d2host = { path = "../crates/d2host" }
+d2data = { path = "../crates/d2data" }
+d2map = { path = "../crates/d2map" }
+
+[target.'cfg(windows)'.build-dependencies]
+winresource = "=0.1.34"
+
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+d2mem = { path = "../crates/d2mem" }
+
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+wasm-bindgen = "0.2.130"
+wasm-bindgen-futures = "0.4"
+js-sys = "0.3.107"
+web-sys = { version = "0.3.107", features = ["Window", "Event", "Document", "Element", "HtmlElement", "HtmlCanvasElement", "HtmlInputElement", "HtmlAnchorElement", "File", "FileList", "Blob", "BlobPropertyBag", "Url", "console"] }
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { version = "0.61", features = ["Win32_System_Console"] }

@@ -1,0 +1,15 @@
+[package]
+name = "d2data"
+description = "Game-asset decoders: DC6, palettes, colour maps, string tables"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+readme.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+explode = "0.1"
+sha2 = "0.10"
+d2host = { path = "../d2host" }

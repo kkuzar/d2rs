@@ -1,0 +1,16 @@
+[workspace]
+resolver = "3"
+members = ["crates/d2host", "crates/d2s", "crates/d2io", "crates/d2mem", "crates/d2data", "crates/d2map", "app"]
+
+[workspace.package]
+version = "0.2.0"
+edition = "2024"
+license = "Apache-2.0"
+rust-version = "1.95"
+repository = "https://github.com/kkuzar/d2rs"
+homepage = "https://kkuzar.github.io/d2rs/"
+readme = "README.md"
+
+[profile.release]
+lto = "thin"
+strip = true

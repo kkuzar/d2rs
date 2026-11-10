@@ -1,0 +1,49 @@
+name: Bug report
+description: Tell us about a problem in d2rs.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Attach a save file only if you agree to make it public. If you cannot share it, describe the file (version, class, items).
+  - type: input
+    id: version
+    attributes:
+      label: d2rs version
+      description: The version from the release name, or the commit if you built d2rs from source.
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where does the problem occur?
+      options:
+        - Windows app
+        - Web version
+        - CLI
+        - Built from source on Windows
+        - Built from source on macOS
+        - Built from source on Linux
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to repeat the problem
+      placeholder: |
+        1. Open ...
+        2. Click ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true

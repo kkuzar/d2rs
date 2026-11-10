@@ -1,0 +1,360 @@
+ID	Stat	Save Bits	Save Add	Save Param Bits	ValShift	Encode	CSvBits	CSvParam	CSvSigned	1.09-Save Bits	1.09-Save Add	descpriority	descfunc	descval	descstrpos	descstr2
+0	strength	8	32				10		0	7	32	67	1	1	ModStr1a	
+1	energy	7	32				10		0	7	32	61	1	1	ModStr1d	
+2	dexterity	7	32				10		0	7	32	65	1	1	ModStr1b	
+3	vitality	7	32				10		0	7	32	63	1	1	ModStr1c	
+4	statpts						10		0							
+5	newskills						8		0							
+6	hitpoints				8		21		0							
+7	maxhp	9	32		8		21		0	8	32	59	1	1	ModStr1u	
+8	mana				8		21		0							
+9	maxmana	8	32		8		21		0	8	32	55	1	1	ModStr1e	
+10	stamina				8		21		0							
+11	maxstamina	8	32		8		21		0	8	32	51	1	1	ModStr5d	
+12	level						7		0							
+13	experience						32		0							
+14	gold						25		0							
+15	goldbank						25		0							
+16	item_armor_percent	9	0							9	0	74	4	1	Modstr2v	
+17	item_maxdamage_percent	9	0							9	0	129	3	0	ModStr2j	
+18	item_mindamage_percent	9	0							9	0	130	3	0	ModStr2k	
+19	tohit	10								10		115	1	1	ModStr1h	
+20	toblock	6	0							6	0	134	2	1	ModStr3g	
+21	mindamage	6	0							6	0	127	1	1	ModStr1g	
+22	maxdamage	7	0							7	0	126	1	1	ModStr1f	
+23	secondary_mindamage	6	0							6	0	124	1	1	ModStr1g	
+24	secondary_maxdamage	7	0							7	0	123	1	1	ModStr1f	
+25	damagepercent	8	0							8	0					
+26	manarecovery	8	0							8	0					
+27	manarecoverybonus	8	0							8	0	52	2	2	ModStr4g	
+28	staminarecoverybonus	8	0							8	0	48	2	2	ModStr3v	
+29	lastexp															
+30	nextexp															
+31	armorclass	11	10							10	10	71	1	1	ModStr1i	
+32	armorclass_vs_missile	9	0							8	0	69	1	1	ModStr6a	
+33	armorclass_vs_hth	8	0							8	0	70	1	1	ModStr6b	
+34	normal_damage_reduction	6	0							6	0	22	3	2	ModStr2u	
+35	magic_damage_reduction	6	0							6	0	21	3	2	ModStr2t	
+36	damageresist	8	0							8	0	22	2	2	ModStr2u	
+37	magicresist	8	0							8	0	41	4	2	ModStr1m	
+38	maxmagicresist	5	0							5	0	46	4	1	ModStr5x	
+39	fireresist	8	50							8	0	36	4	2	ModStr1j	
+40	maxfireresist	5	0							5	0	42	4	1	ModStr5u	
+41	lightresist	8	50							8	0	38	4	2	ModStr1l	
+42	maxlightresist	5	0							5	0	43	4	1	ModStr5w	
+43	coldresist	8	50							8	0	40	4	2	ModStr1k	
+44	maxcoldresist	5	0							5	0	44	4	1	ModStr5v	
+45	poisonresist	8	50							8	0	34	4	2	ModStr1n	
+46	maxpoisonresist	5	0							5	0	45	4	1	ModStr5y	
+47	damageaura															
+48	firemindam	8	0							8	0	102	1	1	ModStr1p	
+49	firemaxdam	9	0							8	0	101	1	1	ModStr1o	
+50	lightmindam	6	0							6	0	99	1	1	ModStr1r	
+51	lightmaxdam	10	0							9	0	98	1	1	ModStr1q	
+52	magicmindam	8	0							6	0	104	1	1	strModMagicDamage	
+53	magicmaxdam	9	0							7	0	103	1	1	strModMagicDamage	
+54	coldmindam	8	0							6	0	96	1	1	ModStr1t	
+55	coldmaxdam	9	0							8	0	95	1	1	ModStr1s	
+56	coldlength	8	0							8	0					
+57	poisonmindam	10	0							9	0	92	1	1	ModStr4i	
+58	poisonmaxdam	10	0							9	0	91	1	1	ModStr4h	
+59	poisonlength	9	0							8	0					
+60	lifedrainmindam	7	0							7	0	88	2	1	ModStr2z	
+61	lifedrainmaxdam															
+62	manadrainmindam	7	0							7	0	89	2	1	ModStr2y	
+63	manadrainmaxdam															
+64	stamdrainmindam															
+65	stamdrainmaxdam															
+66	stunlength															
+67	velocitypercent	7	30							7	30					
+68	attackrate	7	30							7	30					
+69	other_animrate															
+70	quantity															
+71	value	8	100							8	100					
+72	durability	9	0							8	0					
+73	maxdurability	8	0							8	0					
+74	hpregen	6	30							6	30	56	1	2	ModStr2l	
+75	item_maxdurability_percent	7	20							7	20	3	2	2	ModStr2i	
+76	item_maxhp_percent	6	10							6	10	58	2	2	ModStr2g	
+77	item_maxmana_percent	6	10							6	10	54	2	2	ModStr2h	
+78	item_attackertakesdamage	7	0							7	0	13	3	2	ModStr1v	
+79	item_goldbonus	9	100							9	100	10	2	1	ModStr1w	
+80	item_magicbonus	8	100							8	100	8	2	1	ModStr1x	
+81	item_knockback	7	0							7	0	76	3	0	ModStr1y	
+82	item_timeduration	9	20							9	20					
+83	item_addclassskills	3	0	3						3	0	150	13	1	ModStr3a	
+84	unsentparam1									3	0					
+85	item_addexperience	9	50							3	0	11	4	1	Moditem2ExpG	
+86	item_healafterkill	7	0							3	0	16	1	1	ModitemHPaK	
+87	item_reducedprices	7	0							3	0	8	2	2	ModitemRedVendP	
+88	item_doubleherbduration	1	0							1	0					
+89	item_lightradius	4	4							4	4	6	1	1	ModStr3f	
+90	item_lightcolor	24	0							5	0					
+91	item_req_percent	8	100							8	100	0	4	2	ModStr3h	
+92	item_levelreq	7								6	20					
+93	item_fasterattackrate	7	20							7	20	145	4	1	ModStr4m	
+94	item_levelreqpct	7	64							7	20					
+95	lastblockframe									6	20					
+96	item_fastermovevelocity	7	20							7	20	148	4	1	ModStr4s	
+97	item_nonclassskill	6	0	9		1				7	20	81	28			
+98	state	1		8						6	20					
+99	item_fastergethitrate	7	20							7	20	139	4	1	ModStr4p	
+100	monster_playercount									7	20					
+101	skill_poison_override_length									6	20					
+102	item_fasterblockrate	7	20							7	20	136	4	1	ModStr4y	
+103	skill_bypass_undead									7	20					
+104	skill_bypass_demons									6	20					
+105	item_fastercastrate	7	20							7	20	142	4	1	ModStr4v	
+106	skill_bypass_beasts									7	20					
+107	item_singleskill	3	0	9		1				14	0	81	27			
+108	item_restinpeace	1	0							14	0	81	3	0	ModitemSMRIP	
+109	curse_resistance	9	0							14	0					
+110	item_poisonlengthresist	8	20							8	20	18	2	2	ModStr3r	
+111	item_normaldamage	9	20							7	20	122	1	2	ModStr5b	
+112	item_howl	7	-1							7	-1	79	5	2	ModStr3u	
+113	item_stupidity	7	0							7	0	80	12	2	ModStr6d	
+114	item_damagetomana	6	0							6	0	11	2	1	ModStr3w	
+115	item_ignoretargetac	1	0							1	0	119	3	0	ModStr3y	
+116	item_fractionaltargetac	7	0							7	0	118	20	1	ModStr5o	
+117	item_preventheal	7	0							7	0	81	3	0	ModStr4a	
+118	item_halffreezeduration	1	0							1	0	19	3	0	ModStr4b	
+119	item_tohit_percent	9	20							9	20	117	2	1	ModStr4c	
+120	item_damagetargetac	7	128							7	128	75	1	1	ModStr4d	
+121	item_demondamage_percent	9	20							9	20	112	4	1	ModStr4e	
+122	item_undeaddamage_percent	9	20							9	20	108	4	1	ModStr4f	
+123	item_demon_tohit	10	128							10	128	110	1	1	ModStr4j	
+124	item_undead_tohit	10	128							10	128	106	1	1	ModStr4k	
+125	item_throwable	1	0							1	0	5	3	0	ModStr5a	
+126	item_elemskill	3	0	3						4	0	157	1	1	ModStr3i	
+127	item_allskills	3	0							3	0	158	1	1	ModStr3k	
+128	item_attackertakeslightdamage	5	0							5	0	14	3	2	ModStr3j	
+129	ironmaiden_level															
+130	lifetap_level															
+131	thorns_percent															
+132	bonearmor															
+133	bonearmormax															
+134	item_freeze	5	0							5	0	78	12	2	ModStr3l	
+135	item_openwounds	7	0							7	0	83	2	1	ModStr3m	
+136	item_crushingblow	7	0							7	0	87	2	1	ModStr5c	
+137	item_kickdamage	7	0							7	0	121	1	1	ModStr5e	
+138	item_manaafterkill	7	0							7	0	16	1	1	ModStr5f	
+139	item_healafterdemonkill	7	0							7	0	15	1	1	ModStr6c	
+140	item_extrablood	7	0							7	0					
+141	item_deadlystrike	7	0							7	0	85	2	1	ModStr5q	
+142	item_absorbfire_percent	7	0							7	0	23	2	2	ModStr5g	
+143	item_absorbfire	7	0							7	0	27	1	1	ModStr5h	
+144	item_absorblight_percent	7	0							7	0	24	2	2	ModStr5i	
+145	item_absorblight	7	0							7	0	29	1	1	ModStr5j	
+146	item_absorbmagic_percent	7	0							7	0	26	2	2	ModStr5k	
+147	item_absorbmagic	7	0							7	0	33	1	1	ModStr5l	
+148	item_absorbcold_percent	7	0							7	0	25	2	2	ModStr5m	
+149	item_absorbcold	7	0							7	0	31	1	1	ModStr5n	
+150	item_slow	7	0							7	0	77	2	2	ModStr5r	
+151	item_aura	5	0	9						7	0	159	16	0	ModitemAura	
+152	item_indesctructible	1								7	0	160	3	0	ModStre9s	
+153	item_cannotbefrozen	1								1		20	3	0	ModStr5z	
+154	item_staminadrainpct	7	20							7	20	49	2	1	ModStr6e	
+155	item_reanimate	7	0	10						7	0	17	23	1	Moditemreanimas	
+156	item_pierce	7	0							7	0	132	3	0	ModStr6g	
+157	item_magicarrow	7	0							7	0	131	3	0	ModStr6h	
+158	item_explosivearrow	7	0							7	0	133	3	0	ModStr6i	
+159	item_throw_mindamage	6	0							6	0					
+160	item_throw_maxdamage	7	0							7	0					
+161	skill_handofathena															
+162	skill_staminapercent															
+163	skill_passive_staminapercent															
+164	skill_concentration															
+165	skill_enchant															
+166	skill_pierce															
+167	skill_conviction															
+168	skill_chillingarmor															
+169	skill_frenzy															
+170	skill_decrepify															
+171	skill_armor_percent															
+172	alignment															
+173	target0															
+174	target1															
+175	goldlost															
+176	conversion_level															
+177	conversion_maxhp															
+178	unit_dooverlay															
+179	attack_vs_montype	9		10						3	0	108	22	1	ModitemAttratvsM	
+180	damage_vs_montype	9		10						3	0	106	22	1	Moditemdamvsm	
+181	fade	3								14	0					
+182	armor_override_percent									14	0					
+183	unused183									14	0					
+184	unused184									14	0					
+185	unused185									14	0					
+186	unused186									14	0					
+187	unused187									14	0					
+188	item_addskill_tab	3	0	16						10	0	151	14		StrSklTabItem1	
+189	unused189									10	0					
+190	unused190									10	0					
+191	unused191									10	0					
+192	unused192									10	0					
+193	unused193									10	0					
+194	item_numsockets	4	0							4	0					
+195	item_skillonattack	7	0	16		2				21	0	160	15		ItemExpansiveChancX	
+196	item_skillonkill	7	0	16		2				21	0	160	15		ModitemskonKill	
+197	item_skillondeath	7	0	16		2				21	0	160	15		Moditemskondeath	
+198	item_skillonhit	7	0	16		2				21	0	160	15		ItemExpansiveChanc1	
+199	item_skillonlevelup	7	0	16		2				21	0	160	15		ModitemskonLevel	
+200	unused200									21	0					
+201	item_skillongethit	7	0	16		2				21	0	160	15		ItemExpansiveChanc2	
+202	unused202									21	0					
+203	unused203									21	0					
+204	item_charged_skill	16	0	16		3				30	0	1	24		ModStre10d	
+205	unused204					3				30	0					
+206	unused205					3				30	0					
+207	unused206					3				30	0					
+208	unused207					3				30	0					
+209	unused208					3				30	0					
+210	unused209					3				30	0					
+211	unused210					3				30	0					
+212	unused211					3				30	0					
+213	unused212					3				30	0					
+214	item_armor_perlevel	6	0							6	0	72	6	1	ModStr1i	increaseswithplaylevelX
+215	item_armorpercent_perlevel	6	0							6	0	73	8	1	Modstr2v	increaseswithplaylevelX
+216	item_hp_perlevel	6	0		8					6	0	57	6	1	ModStr1u	increaseswithplaylevelX
+217	item_mana_perlevel	6	0		8					6	0	53	6	1	ModStr1e	increaseswithplaylevelX
+218	item_maxdamage_perlevel	6	0							6	0	125	6	1	ModStr1f	increaseswithplaylevelX
+219	item_maxdamage_percent_perlevel	6	0							6	0	128	8	1	ModStr2j	increaseswithplaylevelX
+220	item_strength_perlevel	6	0							6	0	66	6	1	ModStr1a	increaseswithplaylevelX
+221	item_dexterity_perlevel	6	0							6	0	64	6	1	ModStr1b	increaseswithplaylevelX
+222	item_energy_perlevel	6	0							6	0	60	6	1	ModStr1d	increaseswithplaylevelX
+223	item_vitality_perlevel	6	0							6	0	62	6	1	ModStr1c	increaseswithplaylevelX
+224	item_tohit_perlevel	6	0							6	0	114	6	1	ModStr1h	increaseswithplaylevelX
+225	item_tohitpercent_perlevel	6	0							6	0	116	7	1	ModStr4c	increaseswithplaylevelX
+226	item_cold_damagemax_perlevel	6	0							6	0	94	6	1	ModStr1s	increaseswithplaylevelX
+227	item_fire_damagemax_perlevel	6	0							6	0	100	6	1	ModStr1o	increaseswithplaylevelX
+228	item_ltng_damagemax_perlevel	6	0							6	0	97	6	1	ModStr1q	increaseswithplaylevelX
+229	item_pois_damagemax_perlevel	6	0							6	0	90	6	1	ModStr4h	increaseswithplaylevelX
+230	item_resist_cold_perlevel	6	0							6	0	39	7	2	ModStr1k	increaseswithplaylevelX
+231	item_resist_fire_perlevel	6	0							6	0	35	7	2	ModStr1j	increaseswithplaylevelX
+232	item_resist_ltng_perlevel	6	0							6	0	37	7	2	ModStr1l	increaseswithplaylevelX
+233	item_resist_pois_perlevel	6	0							6	0	33	7	2	ModStr1n	increaseswithplaylevelX
+234	item_absorb_cold_perlevel	6	0							6	0	32	6	1	ModStre9p	increaseswithplaylevelX
+235	item_absorb_fire_perlevel	6	0							6	0	28	6	1	ModStre9o	increaseswithplaylevelX
+236	item_absorb_ltng_perlevel	6	0							6	0	30	6	1	ModStre9q	increaseswithplaylevelX
+237	item_absorb_pois_perlevel	6	0							6	0					
+238	item_thorns_perlevel	5	0							6	0	12	9	2	ModStr1v	increaseswithplaylevelX
+239	item_find_gold_perlevel	6	0							6	0	9	7	1	ModStr1w	increaseswithplaylevelX
+240	item_find_magic_perlevel	6	0							6	0	7	7	1	ModStr1x	increaseswithplaylevelX
+241	item_regenstamina_perlevel	6	0							6	0	47	8	2	ModStr3v	increaseswithplaylevelX
+242	item_stamina_perlevel	6	0							6	0	50	6	1	ModStr5d	increaseswithplaylevelX
+243	item_damage_demon_perlevel	6	0							6	0	111	8	1	ModStr4e	increaseswithplaylevelX
+244	item_damage_undead_perlevel	6	0							6	0	107	8	1	ModStr4f	increaseswithplaylevelX
+245	item_tohit_demon_perlevel	6	0							6	0	109	6	1	ModStr4j	increaseswithplaylevelX
+246	item_tohit_undead_perlevel	6	0							6	0	105	6	1	ModStr4k	increaseswithplaylevelX
+247	item_crushingblow_perlevel	6	0							6	0	86	7	1	ModStr5c	increaseswithplaylevelX
+248	item_openwounds_perlevel	6	0							6	0	82	7	1	ModStr3m	increaseswithplaylevelX
+249	item_kick_damage_perlevel	6	0							6	0	120	6	1	ModStr5e	increaseswithplaylevelX
+250	item_deadlystrike_perlevel	6	0							6	0	84	7	1	ModStr5q	increaseswithplaylevelX
+251	item_find_gems_perlevel															
+252	item_replenish_durability	6	0							5	0	1	11	0	ModStre9t	
+253	item_replenish_quantity	6	0							5	0	2	3	0	ModStre9v	
+254	item_extra_stack	8	0							8	0	4	3	0	ModStre9i	
+255	item_find_item															
+256	item_slash_damage															
+257	item_slash_damage_percent															
+258	item_crush_damage															
+259	item_crush_damage_percent															
+260	item_thrust_damage															
+261	item_thrust_damage_percent															
+262	item_absorb_slash															
+263	item_absorb_crush															
+264	item_absorb_thrust															
+265	item_absorb_slash_percent															
+266	item_absorb_crush_percent															
+267	item_absorb_thrust_percent															
+268	item_armor_bytime	22	0			4				22	0	180	17	1	ModStr1i	
+269	item_armorpercent_bytime	22	0			4				22	0	180	18	1	Modstr2v	
+270	item_hp_bytime	22	0			4				22	0	180	17	1	ModStr1u	
+271	item_mana_bytime	22	0			4				22	0	180	17	1	ModStr1e	
+272	item_maxdamage_bytime	22	0			4				22	0	180	17	1	ModStr1f	
+273	item_maxdamage_percent_bytime	22	0			4				22	0	180	18	1	ModStr2j	
+274	item_strength_bytime	22	0			4				22	0	180	17	1	ModStr1a	
+275	item_dexterity_bytime	22	0			4				22	0	180	17	1	ModStr1b	
+276	item_energy_bytime	22	0			4				22	0	180	17	1	ModStr1d	
+277	item_vitality_bytime	22	0			4				22	0	180	17	1	ModStr1c	
+278	item_tohit_bytime	22	0			4				22	0	180	17	1	ModStr1h	
+279	item_tohitpercent_bytime	22	0			4				22	0	180	18	1	ModStr4c	
+280	item_cold_damagemax_bytime	22	0			4				22	0	180	17	1	ModStr1s	
+281	item_fire_damagemax_bytime	22	0			4				22	0	180	17	1	ModStr1o	
+282	item_ltng_damagemax_bytime	22	0			4				22	0	180	17	1	ModStr1q	
+283	item_pois_damagemax_bytime	22	0			4				22	0	180	17	1	ModStr4h	
+284	item_resist_cold_bytime	22	0			4				22	0	180	18	2	ModStr1k	
+285	item_resist_fire_bytime	22	0			4				22	0	180	18	2	ModStr1j	
+286	item_resist_ltng_bytime	22	0			4				22	0	180	18	2	ModStr1l	
+287	item_resist_pois_bytime	22	0			4				22	0	180	18	2	ModStr1n	
+288	item_absorb_cold_bytime	22	0			4				22	0	180	18	1	ModStre9p	
+289	item_absorb_fire_bytime	22	0			4				22	0	180	18	1	ModStre9o	
+290	item_absorb_ltng_bytime	22	0			4				22	0	180	18	1	ModStre9q	
+291	item_absorb_pois_bytime	22	0			4				22	0					
+292	item_find_gold_bytime	22	0			4				22	0	180	18	2	ModStr1w	
+293	item_find_magic_bytime	22	0			4				22	0	180	18	1	ModStr1x	
+294	item_regenstamina_bytime	22	0			4				22	0	180	18	2	ModStr3v	
+295	item_stamina_bytime	22	0			4				22	0	180	17	1	ModStr5d	
+296	item_damage_demon_bytime	22	0			4				22	0	180	18	1	ModStr4e	
+297	item_damage_undead_bytime	22	0			4				22	0	180	18	1	ModStr4f	
+298	item_tohit_demon_bytime	22	0			4				22	0	180	17	1	ModStr4j	
+299	item_tohit_undead_bytime	22	0			4				22	0	180	17	1	ModStr4k	
+300	item_crushingblow_bytime	22	0			4				22	0	180	18	1	ModStr5c	
+301	item_openwounds_bytime	22	0			4				22	0	180	18	1	ModStr3m	
+302	item_kick_damage_bytime	22	0			4				22	0	180	17	1	ModStr5e	
+303	item_deadlystrike_bytime	22	0			4				22	0	180	18	1	ModStr5q	
+304	item_find_gems_bytime					4										
+305	item_pierce_cold	8	50									88	20	1	Moditemenrescoldsk	
+306	item_pierce_fire	8	50									88	20	1	Moditemenresfiresk	
+307	item_pierce_ltng	8	50									88	20	1	Moditemenresltngsk	
+308	item_pierce_pois	8	50									88	20	1	Moditemenrespoissk	
+309	item_damage_vs_monster															
+310	item_damage_percent_vs_monster															
+311	item_tohit_vs_monster															
+312	item_tohit_percent_vs_monster															
+313	item_ac_vs_monster															
+314	item_ac_percent_vs_monster															
+315	firelength															
+316	burningmin															
+317	burningmax															
+318	progressive_damage															
+319	progressive_steal															
+320	progressive_other															
+321	progressive_fire															
+322	progressive_cold															
+323	progressive_lightning															
+324	item_extra_charges	6	0							6	0					
+325	progressive_tohit															
+326	poison_count															
+327	damage_framerate															
+328	pierce_idx															
+329	passive_fire_mastery	9	50							8	0	88	4	1	ModitemdamFiresk	
+330	passive_ltng_mastery	9	50							8	0	88	4	1	ModitemdamLtngsk	
+331	passive_cold_mastery	9	50							8	0	88	4	1	ModitemdamColdsk	
+332	passive_pois_mastery	9	50							8	0	88	4	1	ModitemdamPoissk	
+333	passive_fire_pierce	8	0							8	0	88	20	1	Moditemenresfiresk	
+334	passive_ltng_pierce	8	0							8	0	88	20	1	Moditemenresltngsk	
+335	passive_cold_pierce	8	0							8	0	88	20	1	Moditemenrescoldsk	
+336	passive_pois_pierce	8	0							8	0	88	20	1	Moditemenrespoissk	
+337	passive_critical_strike	8	0							8	0					
+338	passive_dodge	7	0							7	0					
+339	passive_avoid	7	0							7	0					
+340	passive_evade	7	0							7	0					
+341	passive_warmth	8	0							8	0					
+342	passive_mastery_melee_th	8	0							8	0					
+343	passive_mastery_melee_dmg	8	0							8	0					
+344	passive_mastery_melee_crit	8	0							8	0					
+345	passive_mastery_throw_th	8	0							8	0					
+346	passive_mastery_throw_dmg	8	0							8	0					
+347	passive_mastery_throw_crit	8	0							8	0					
+348	passive_weaponblock	8	0							8	0					
+349	passive_summon_resist	8	0							8	0					
+350	modifierlist_skill															
+351	modifierlist_level															
+352	last_sent_hp_pct															
+353	source_unit_type															
+354	source_unit_id															
+355	shortparam1															
+356	questitemdifficulty	2	0													
+357	passive_mag_mastery	9	50							8	0					
+358	passive_mag_pierce	8	0							8	0					

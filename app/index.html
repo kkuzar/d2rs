@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>d2rs</title>
+  <link data-trunk rel="rust" data-bin="d2rs" data-wasm-opt="z" data-wasm-opt-params="--enable-bulk-memory --enable-bulk-memory-opt --enable-sign-ext --enable-nontrapping-float-to-int --enable-reference-types --enable-mutable-globals --enable-multivalue" />
+  <link data-trunk rel="icon" href="icons/icon.png" />
+  <style>
+    html, body { margin: 0; height: 100%; background: #1b1b1b; }
+    canvas { display: block; width: 100%; height: 100%; background: #1b1b1b; }
+  </style>
+</head>
+<body>
+  <canvas id="d2rs"></canvas>
+  <p id="loading" style="position: fixed; top: 1em; left: 1em; color: #ccc; font-family: sans-serif">Loading d2rs...</p>
+  <noscript><p style="color: #ccc; font-family: sans-serif">d2rs needs JavaScript and WebGL.</p></noscript>
+</body>
+</html>

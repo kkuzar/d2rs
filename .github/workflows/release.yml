@@ -1,0 +1,62 @@
+name: release
+# By hand from main: one portable Windows .exe, published as GitHub Release v<version> (version from Cargo.toml).
+# Only for a commit the private test suite passed. Everyone else: the browser version or build from source.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  gate:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      statuses: read
+    steps:
+      - env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          s=$(gh api "repos/${{ github.repository }}/commits/$GITHUB_SHA/status" -q '.statuses[] | select(.context == "private-tests") | .state')
+          [ "$s" = success ] || { echo "private-tests is '${s:-missing}' on $GITHUB_SHA: run the private suite first"; exit 1; }
+
+  build:
+    needs: gate
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+      - run: cargo build --release --locked -p d2rs
+      - shell: bash
+        run: mkdir dist && cp target/release/d2rs.exe dist/d2rs_windows_x64.exe
+      - uses: actions/upload-artifact@v4
+        with:
+          name: d2rs-windows
+          path: dist/*.exe
+
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          path: dist
+          merge-multiple: true
+      - env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          v=$(sed -n 's/^version = "\(.*\)"/\1/p' Cargo.toml | head -1)
+          if gh release view "v$v" >/dev/null 2>&1; then
+            t=$(gh api "repos/${{ github.repository }}/git/ref/tags/v$v" -q .object.sha)
+            [ "$t" = "$GITHUB_SHA" ] || { echo "v$v exists on another commit: bump the version in Cargo.toml"; exit 1; }
+          else
+            gh release create "v$v" --target "$GITHUB_SHA" --title "d2rs $v" --notes "Windows: d2rs_windows_x64.exe runs as is, no install. Any OS: the browser version at https://kkuzar.github.io/d2rs/, or build from source (see the README). Licenses: https://github.com/kkuzar/d2rs/tree/main/licenses"
+          fi
+          find dist -type f -name '*.exe' -exec gh release upload "v$v" --clobber {} +
