@@ -1,0 +1,15 @@
+[package]
+name = "d2host"
+description = "Host layer for d2rs: files, clock and background jobs (std on desktop, in-memory files in the browser)"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+readme.workspace = true
+rust-version.workspace = true
+
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+js-sys = "0.3.107"
+wasm-bindgen = "0.2.130"
+web-sys = { version = "0.3.107", features = ["Window"] }

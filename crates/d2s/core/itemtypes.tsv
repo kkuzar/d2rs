@@ -1,0 +1,104 @@
+Code	ItemType	Equiv1	Equiv2	BodyLoc1	BodyLoc2	Beltable	MaxSock1	MaxSock25	MaxSock40	VarInvGfx	InvGfx1	InvGfx2	InvGfx3	InvGfx4	InvGfx5	InvGfx6	Class	Throwable	Rare	Magic	Normal	StaffMods	Quiver
+	None					0	0	0	0	0								0			0		
+	None					0	0	0	0	0								0			0		
+shie	Shield	shld		rarm	larm	0	3	3	4	0								0	1		0		
+tors	Armor	armo		tors	tors	0	3	4	6	0								0	1		0		
+gold	Gold	misc				0	0	0	0	0								0			1		
+bowq	Bow Quiver	misl		rarm	larm	0	0	0	0	0								0			1		bow
+xboq	Crossbow Quiver	misl		rarm	larm	0	0	0	0	0								0			1		xbow
+play	Player Body Part	misc				0	0	0	0	0								0			1		
+herb	Herb	misc				0	0	0	0	0								0			0		
+poti	Potion	misc				1	0	0	0	0								0			1		
+ring	Ring	misc		rrin	lrin	0	0	0	0	5	invrin1	invrin2	invrin3	invrin4	invrin5			0	1	1	0		
+elix	Elixir	misc				1	0	0	0	0								0			0		
+amul	Amulet	misc		neck	neck	0	0	0	0	3	invamu1	invamu2	invamu3					0	1	1	0		
+char	Charm	misc				0	0	0	0	3	invch1	invch4	invch7					0		1	0		
+	Not Used					0	0	0	0	0								0			0		
+boot	Boots	armo		feet	feet	0	0	0	0	0								0	1		0		
+glov	Gloves	armo		glov	glov	0	0	0	0	0								0	1		0		
+	Not Used					0	0	0	0	0								0			0		
+book	Book	misc				0	0	0	0	0								0			1		
+belt	Belt	armo		belt	belt	0	0	0	0	0								0	1		0		
+gem	Gem	sock				0	0	0	0	0								0			1		
+torc	Torch	misc				0	0	0	0	0								0			1		
+scro	Scroll	misc				1	0	0	0	0								0			1		
+	Not Used					0	0	0	0	0								0			0		
+scep	Scepter	rod		rarm	larm	0	3	5	6	0								0	1		0	pal	
+wand	Wand	rod		rarm	larm	0	2	2	2	0								0	1		0	nec	
+staf	Staff	rod		rarm	larm	0	5	6	6	0								0	1		0	sor	
+bow	Bow	miss		rarm	larm	0	3	4	6	0								0	1		0		
+axe	Axe	mele		rarm	larm	0	4	5	6	0								0	1		0		
+club	Club	blun		rarm	larm	0	3	4	6	0								0	1		0		
+swor	Sword	mele		rarm	larm	0	3	4	6	0								0	1		0		
+hamm	Hammer	blun		rarm	larm	0	3	4	6	0								0	1		0		
+knif	Knife	mele		rarm	larm	0	2	3	3	0								0	1		0		
+spea	Spear	mele		rarm	larm	0	3	4	6	0								0	1		0		
+pole	Polearm	mele		rarm	larm	0	3	4	6	0								0	1		0		
+xbow	Crossbow	miss		rarm	larm	0	3	4	6	0								0	1		0		
+mace	Mace	blun		rarm	larm	0	3	4	6	0								0	1		0		
+helm	Helm	armo		head	head	0	2	2	3	0								0	1		0		
+tpot	Missile Potion	thro		rarm	larm	0	0	0	0	0								1			1		
+ques	Quest					0	0	0	0	0								0			0		
+body	Body Part	misc				0	0	0	0	0								0			1		
+key	Key	misc				0	0	0	0	0								0			1		
+tkni	Throwing Knife	comb	knif	rarm	larm	0	0	0	0	0								1	1		0		
+taxe	Throwing Axe	comb	axe	rarm	larm	0	0	0	0	0								1	1		0		
+jave	Javelin	comb	spea	rarm	larm	0	0	0	0	0								1	1		0		
+weap	Weapon					0	0	0	0	0								0	1		0		
+mele	Melee Weapon	weap				0	0	0	0	0								0	1		0		
+miss	Missile Weapon	weap				0	0	0	0	0								0	1		0		
+thro	Thrown Weapon	weap				0	0	0	0	0								1	1		0		
+comb	Combo Weapon	mele	thro			0	0	0	0	0								1	1		0		
+armo	Any Armor					0	0	0	0	0								0	1		0		
+shld	Any Shield	armo	seco			0	0	0	0	0								0	1		0		
+misc	Miscellaneous					0	0	0	0	0								0	1		0		
+sock	Socket Filler	misc				0	0	0	0	0								0			0		
+seco	Second Hand					0	0	0	0	0								0	1		0		
+rod	Staves And Rods	blun				0	0	0	0	0								0	1		0		
+misl	Missile	misc				0	0	0	0	0								0			0		
+blun	Blunt	mele				0	0	0	0	0								0	1		0		
+jewl	Jewel	sock				0	0	0	0	6	invjw1	invjw2	invjw3	invjw4	invjw5	invjw6		0	1	1	0		
+clas	Class Specific					0	0	0	0	0								0	1		0		
+amaz	Amazon Item	clas				0	0	0	0	0							ama	0	1		0		
+barb	Barbarian Item	clas				0	0	0	0	0							bar	0	1		0		
+necr	Necromancer Item	clas				0	0	0	0	0							nec	0	1		0		
+pala	Paladin Item	clas				0	0	0	0	0							pal	0	1		0		
+sorc	Sorceress Item	clas				0	0	0	0	0							sor	0	1		0		
+assn	Assassin Item	clas				0	0	0	0	0							ass	0	1		0		
+drui	Druid Item	clas				0	0	0	0	0							dru	0	1		0		
+h2h	Hand to Hand	mele	assn	rarm	larm	0	2	3	3	0							ass	0	1		0		
+orb	Orb	weap	sorc	rarm	larm	0	2	3	3	0							sor	0	1		0	sor	
+head	Voodoo Heads	shld	necr	rarm	larm	0	2	3	3	0							nec	0	1		0	nec	
+ashd	Auric Shields	shld	pala	rarm	larm	0	3	4	4	0							pal	0	1		0		
+phlm	Primal Helm	helm	barb	head	head	0	2	3	3	0							bar	0	1		0	bar	
+pelt	Pelt	helm	drui	head	head	0	2	3	3	0							dru	0	1		0	dru	
+cloa	Cloak	tors	assn	tors	tors	0	0	0	0	0							ass	0	1		0	ass	
+rune	Rune	sock				0	0	0	0	0								0			1		
+circ	Circlet	helm		head	head	0	1	2	3	0								0	1		0		
+hpot	Healing Potion	poti				1	0	0	0	0								0			1		
+mpot	Mana Potion	poti				1	0	0	0	0								0			1		
+rpot	Rejuv Potion	hpot	mpot			1	0	0	0	0								0			1		
+spot	Stamina Potion	poti				1	0	0	0	0								0			1		
+apot	Antidote Potion	poti				1	0	0	0	0								0			1		
+wpot	Thawing Potion	poti				1	0	0	0	0								0			1		
+scha	Small Charm	char				0	0	0	0	3	invch1	invch4	invch7					0		1	0		
+mcha	Medium Charm	char				0	0	0	0	3	invch2	invch5	invch8					0		1	0		
+lcha	Large Charm	char				0	0	0	0	3	invch3	invch6	invch9					0		1	0		
+abow	Amazon Bow	bow	amaz	rarm	larm	0	3	4	5	0							ama	0	1		0		
+aspe	Amazon Spear	spea	amaz	rarm	larm	0	3	4	6	0							ama	0	1		0		
+ajav	Amazon Javelin	jave	amaz	rarm	larm	0	0	0	0	0							ama	1	1		0		
+h2h2	Hand to Hand 2	h2h		rarm	larm	0	2	3	3	0							ass	0	1		0	ass	
+mboq	Magic Bow Quiv	bowq		rarm	larm	0	0	0	0	0								0	1	1	0		bow
+mxbq	Magic Xbow Quiv	xboq		rarm	larm	0	0	0	0	0								0	1	1	0		xbow
+gem0	Chipped Gem	gem				0	0	0	0	0								0			1		
+gem1	Flawed Gem	gem				0	0	0	0	0								0			1		
+gem2	Standard Gem	gem				0	0	0	0	0								0			1		
+gem3	Flawless Gem	gem				0	0	0	0	0								0			1		
+gem4	Perfect Gem	gem				0	0	0	0	0								0			1		
+gema	Amethyst	gem				0	0	0	0	0								0			1		
+gemd	Diamond	gem				0	0	0	0	0								0			1		
+geme	Emerald	gem				0	0	0	0	0								0			1		
+gemr	Ruby	gem				0	0	0	0	0								0			1		
+gems	Sapphire	gem				0	0	0	0	0								0			1		
+gemt	Topaz	gem				0	0	0	0	0								0			1		
+gemz	Skull	gem				0	0	0	0	0								0			1		

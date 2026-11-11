@@ -1,0 +1,15 @@
+[package]
+name = "d2io"
+description = "Safe save-file writes for d2rs: game detection, backups, atomic replace, read-back verify"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+readme.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+sysinfo = { version = "0.40", default-features = false, features = ["system"] }
+directories = "6"
+d2host = { path = "../d2host" }

@@ -1,0 +1,16 @@
+[package]
+name = "d2map"
+description = "Map seed tree and level generation"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+readme.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+d2s = { path = "../d2s" }
+d2data = { path = "../d2data" }
+png = "0.18"
+d2host = { path = "../d2host" }

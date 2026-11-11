@@ -1,0 +1,59 @@
+name: ci
+# lint: guard + clippy (native, wasm32) on Linux. windows: the release build starts. Behaviour is tested privately (Linux).
+# The test suite is private (kkuzar/d2rs_test); the `dispatch` job only starts it, and its result comes back as the
+# `private-tests` commit status (that name must stay unique: no job here may be called private-tests).
+on:
+  push:
+    branches: [main]
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sh tools/check_public.sh
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: wasm32-unknown-unknown
+          components: clippy
+      - uses: Swatinem/rust-cache@v2
+      - run: sudo apt-get update && sudo apt-get install -y libxkbcommon-dev libgtk-3-dev libxcb-render0-dev libxcb-shape0-dev libxcb-xfixes0-dev
+      - run: cargo clippy --workspace --all-targets --locked -- -D warnings
+      - run: cargo clippy -p d2rs --target wasm32-unknown-unknown --locked -- -D warnings
+
+  windows:
+    # Release capability only: the same build as release.yml, then one start of the exe. No tests here.
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+      - run: cargo build --release --locked -p d2rs
+      - shell: bash
+        run: |
+          out=$(./target/release/d2rs.exe cli 2>&1 || true)
+          echo "$out" | grep -q 'usage: d2rs cli' || { echo "d2rs.exe did not start: $out"; exit 1; }
+
+  dispatch:
+    needs: [lint, windows]
+    # Fork PRs get no secrets: the maintainer runs d2rs_test's `tests` workflow by hand with the commit id.
+    if: github.event_name != 'pull_request' || (!github.event.pull_request.draft && github.event.pull_request.head.repo.full_name == github.repository)
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          GH_TOKEN: ${{ secrets.D2RS_TEST_DISPATCH }}
+          SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+          REF: ${{ github.head_ref || github.ref_name }}
+        run: gh api repos/kkuzar/d2rs_test/dispatches -f event_type=d2rs -f "client_payload[sha]=$SHA" -f "client_payload[ref]=$REF"
