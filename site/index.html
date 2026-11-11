@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>d2rs</title>
+<meta name="description" content="Character save editor for game version 1.14d (.d2s), written in Rust.">
+<link rel="icon" href="icon.png">
+<style>
+:root { --bg: #fafaf8; --fg: #1d1d1b; --muted: #5d5d58; --card: #fff; --line: #d9d9d2; --accent: #8a4b08; --accent-fg: #fff; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #141412; --fg: #ecebe6; --muted: #a3a29a; --card: #1e1e1b; --line: #34332f; --accent: #e0a458; --accent-fg: #141412; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.55 system-ui, sans-serif; }
+main { max-width: 46rem; margin: 0 auto; padding: 2.5rem 16px 3rem; }
+h1 { margin: 0; font-size: 2.4rem; }
+h2 { margin: 2rem 0 .5rem; font-size: 1.2rem; }
+p, ul { margin: .5rem 0; }
+.tag { color: var(--muted); font-size: 1.1rem; margin-top: .25rem; }
+.links { display: flex; flex-wrap: wrap; gap: .75rem; margin: 1.5rem 0; }
+.links a { padding: .7rem 1.1rem; border: 1px solid var(--accent); border-radius: 8px; text-decoration: none; font-weight: 600; color: var(--accent); }
+.links a.primary { background: var(--accent); color: var(--accent-fg); }
+a { color: var(--accent); }
+code { background: var(--card); border: 1px solid var(--line); border-radius: 4px; padding: .1rem .3rem; overflow-wrap: anywhere; }
+table { width: 100%; border-collapse: collapse; background: var(--card); }
+th, td { text-align: left; vertical-align: top; padding: .5rem .6rem; border: 1px solid var(--line); }
+footer { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+</style>
+<script data-goatcounter="https://d2rs.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</head>
+<body>
+<main>
+<img src="icon.png" width="120" height="120" alt="d2rs logo">
+<h1>d2rs</h1>
+<p class="tag">Character save editor for game version 1.14d (.d2s), written in Rust.</p>
+
+<div class="links">
+  <a class="primary" href="app/">Open the web version</a>
+  <a href="https://github.com/kkuzar/d2rs/releases/latest/download/d2rs_windows_x64.exe">Download for Windows (portable .exe)</a>
+  <a href="https://github.com/kkuzar/d2rs">Source on GitHub</a>
+</div>
+
+<h2>What it does</h2>
+<ul>
+  <li>Edits character stats, skills, gold, waypoints and quests.</li>
+  <li>Items: create any item, edit its seed and single traits, and run a legit check.</li>
+  <li>Edits PlugY stash files (.d2x, .sss).</li>
+  <li>Seed maps for one level or a whole act, with PNG and JSON export.</li>
+  <li>Safe writes: every file is checked before and after saving, and the Windows app keeps backups.</li>
+</ul>
+
+<h2>Web version vs Windows app</h2>
+<table>
+  <tr><th>Web version</th><th>Windows app</th></tr>
+  <tr>
+    <td>Runs fully in the browser. Your files never leave your computer. Saving downloads the edited file; copy it into your save folder. Maps and item pictures need your own game folder.</td>
+    <td>Opens save folders directly and keeps backups of every file it writes. Has the live game reader, which exists only here.</td>
+  </tr>
+</table>
+
+<h2>Other systems</h2>
+<p>Pick your own game folder (its MPQ files) in d2rs for item names, item creation, item pictures and the map. Build from source: <code>cargo install --git https://github.com/kkuzar/d2rs --locked d2rs</code>. See the <a href="https://github.com/kkuzar/d2rs#readme">README</a> for details.</p>
+
+<footer>
+  <p>Apache-2.0. <a href="https://github.com/kkuzar/d2rs/tree/main/licenses">Credits and licenses</a>.</p>
+  <p>Not affiliated with or endorsed by the game's publisher.</p>
+</footer>
+</main>
+</body>
+</html>
