@@ -23,6 +23,22 @@ d2rs edits `.d2s` character saves and PlugY stash files (`.d2x`, `.sss`). It nev
 
 d2rs refuses to write while the game runs, because the game overwrites the save file at Save & Exit. The project is feature complete, and it includes item generation and the seed map. Website: <https://kkuzar.github.io/d2rs/>
 
+<p align="center"><img src="site/img/map-town.png" width="820" alt="The Map tab shows one level as a game-style isometric picture"></p>
+
+## Screenshots
+
+The item pictures and the maps in these screenshots come from the game folder of the user. d2rs reads them when it runs.
+
+| Character: name, class, level, gold, map seed | Stats: attributes and points |
+|---|---|
+| ![Character tab](site/img/character.png) | ![Stats tab](site/img/stats.png) |
+| **Skills: one level for each skill** | **Quests: each act and difficulty** |
+| ![Skills tab](site/img/skills.png) | ![Quests tab](site/img/quests.png) |
+| **Items: equipment, inventory, cube, stash, mercenary** | **Map: a whole act from one seed** |
+| ![Items tab](site/img/items.png) | ![Map tab, whole act](site/img/map-act.png) |
+| **Map: one level, isometric** | **Map: waypoint marker** |
+| ![Map tab, one level](site/img/map-town.png) | ![Map tab, level with a waypoint](site/img/map-docks.png) |
+
 ## Pick your game folder: everything works much better with it
 
 d2rs ships only the core game tables: the save format, base items, item types, skills and experience. The other tables (unique, set, magic and rare names and properties, runewords) come from **your own** 1.14d game folder, which holds the MPQ files (`patch_d2.mpq`, `d2exp.mpq`, `d2data.mpq`). Use "Game folder..." in the program (or `--game dir` / `D2RS_GAME_DIR` for the CLI).
@@ -126,7 +142,7 @@ The web version runs in your browser and does not upload your files. It has no L
 - d2rs refuses to write a save file that holds a value that the game would overflow, reset or delete. An example is a runeword whose sockets do not match its runes.
 - Item generation, the legit check and the map generator follow the decompiled 1.14d behaviour. This includes the draw order of the random number generator of the game. Maps match the reference traces exactly for the tested seeds.
 - Maps and item art need your own 1.14d installation (the MPQ archives). The map generator also reads one table from `Game.exe`.
-- This repository holds no game archives, art or executables. It holds only the tables in `crates/d2s/data/`.
+- This repository holds no game archives, art files or executables. It holds only the tables in `crates/d2s/data/` and the screenshots of the program in `site/img/`.
 - The tables in `crates/d2s/data/` are column subsets that come from the 1.14d data tables of the game. They include item, affix and skill names. The parser needs them for the bit widths.
 - d2rs reads everything else from your installation when it runs. For item art, point the program at the game folder or at an extracted data folder.
 

@@ -55,7 +55,7 @@ jobs:
       - run: cargo fetch --locked
       - run: trunk build --release
         working-directory: app
-      - run: mkdir -p _site && cp site/index.html app/icons/icon.png _site/ && cp -R app/dist _site/app
+      - run: mkdir -p _site && cp -R site/. _site/ && cp app/icons/icon.png _site/ && cp -R app/dist _site/app
       - uses: actions/upload-pages-artifact@v5
         with:
           path: _site
