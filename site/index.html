@@ -13,44 +13,126 @@
 }
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.55 system-ui, sans-serif; }
-main { max-width: 46rem; margin: 0 auto; padding: 2.5rem 16px 3rem; }
-h1 { margin: 0; font-size: 2.4rem; }
-h2 { margin: 2rem 0 .5rem; font-size: 1.2rem; }
+main { max-width: 68rem; margin: 0 auto; padding: 2.5rem 16px 3rem; }
+header { text-align: center; }
+h1 { margin: 0; font-size: 2.6rem; }
+h2 { margin: 0 0 .5rem; font-size: 1.4rem; }
+h3 { margin: 3rem 0 .75rem; font-size: 1.2rem; }
 p, ul { margin: .5rem 0; }
-.tag { color: var(--muted); font-size: 1.1rem; margin-top: .25rem; }
-.links { display: flex; flex-wrap: wrap; gap: .75rem; margin: 1.5rem 0; }
+ul { padding-left: 1.2rem; }
+.tag { color: var(--muted); font-size: 1.15rem; max-width: 40rem; margin: .4rem auto 0; }
+.links { display: flex; flex-wrap: wrap; justify-content: center; gap: .75rem; margin: 1.5rem 0 2rem; }
 .links a { padding: .7rem 1.1rem; border: 1px solid var(--accent); border-radius: 8px; text-decoration: none; font-weight: 600; color: var(--accent); }
 .links a.primary { background: var(--accent); color: var(--accent-fg); }
 a { color: var(--accent); }
+img { max-width: 100%; height: auto; }
+.shot { display: block; width: 100%; border: 1px solid var(--line); border-radius: 10px; background: #000; }
+.row { display: grid; grid-template-columns: 1fr 1.6fr; gap: 2rem; align-items: center; margin-top: 3.5rem; }
+.row:nth-of-type(even) { grid-template-columns: 1.6fr 1fr; }
+.row:nth-of-type(even) > div { order: 2; }
+.safe { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: .75rem; padding: 0; list-style: none; }
+.safe li, td, th { background: var(--card); border: 1px solid var(--line); padding: .7rem .8rem; }
+.safe li { border-radius: 8px; }
+.safe b { display: block; }
 code { background: var(--card); border: 1px solid var(--line); border-radius: 4px; padding: .1rem .3rem; overflow-wrap: anywhere; }
-table { width: 100%; border-collapse: collapse; background: var(--card); }
-th, td { text-align: left; vertical-align: top; padding: .5rem .6rem; border: 1px solid var(--line); }
-footer { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; vertical-align: top; }
+footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+@media (max-width: 760px) { .row { grid-template-columns: 1fr; gap: 1rem; } .row:nth-of-type(even) > div { order: 0; } }
 </style>
 <script data-goatcounter="https://d2rs.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
 <body>
 <main>
-<img src="icon.png" width="120" height="120" alt="d2rs logo">
-<h1>d2rs</h1>
-<p class="tag">Character save editor for game version 1.14d (.d2s), written in Rust.</p>
+<header>
+  <img src="icon.png" width="120" height="120" alt="d2rs logo">
+  <h1>d2rs</h1>
+  <p class="tag">Character save editor for game version 1.14d (.d2s), written in Rust. Edit your character, your items and your stash, and see the map of any seed.</p>
+  <div class="links">
+    <a class="primary" href="app/">Open the web version</a>
+    <a href="https://github.com/kkuzar/d2rs/releases/latest/download/d2rs_windows_x64.exe">Download for Windows (portable .exe)</a>
+    <a href="https://github.com/kkuzar/d2rs">Source on GitHub</a>
+  </div>
+  <a href="img/map-town.png"><img class="shot" src="img/map-town.png" width="1544" height="1121" alt="The Map tab shows one level as a game-style isometric picture"></a>
+</header>
 
-<div class="links">
-  <a class="primary" href="app/">Open the web version</a>
-  <a href="https://github.com/kkuzar/d2rs/releases/latest/download/d2rs_windows_x64.exe">Download for Windows (portable .exe)</a>
-  <a href="https://github.com/kkuzar/d2rs">Source on GitHub</a>
-</div>
+<section class="row">
+  <div>
+    <h2>Character</h2>
+    <p>Change the name, class, level, experience and gold. Set the hardcore, ladder, expansion and died flags.</p>
+    <p>See the map seed, type a new seed, or make a random seed. You can keep the same map for each difficulty.</p>
+  </div>
+  <a href="img/character.png"><img class="shot" loading="lazy" src="img/character.png" width="1544" height="1121" alt="Character tab"></a>
+</section>
 
-<h2>What it does</h2>
-<ul>
-  <li>Edits character stats, skills, gold, waypoints and quests.</li>
-  <li>Items: create any item, edit its seed and single traits, and run a legit check.</li>
-  <li>Edits PlugY stash files (.d2x, .sss).</li>
-  <li>Seed maps for one level or a whole act, with PNG and JSON export.</li>
-  <li>Safe writes: every file is checked before and after saving, and the Windows app keeps backups.</li>
+<section class="row">
+  <div>
+    <h2>Stats</h2>
+    <p>Set strength, energy, dexterity and vitality. Set the free stat points and skill points. d2rs shows life, mana and stamina.</p>
+    <p>Each value stays inside the range that the game accepts.</p>
+  </div>
+  <a href="img/stats.png"><img class="shot" loading="lazy" src="img/stats.png" width="1544" height="1121" alt="Stats tab"></a>
+</section>
+
+<section class="row">
+  <div>
+    <h2>Skills</h2>
+    <p>Set the level of each skill of your class. The list shows the character level that each skill needs.</p>
+  </div>
+  <a href="img/skills.png"><img class="shot" loading="lazy" src="img/skills.png" width="1544" height="1121" alt="Skills tab"></a>
+</section>
+
+<section class="row">
+  <div>
+    <h2>Quests and waypoints</h2>
+    <p>Complete or reset each quest in each act, for Normal, Nightmare and Hell. Open or close each waypoint.</p>
+    <p>Pending rewards (imbue, socket, personalisation) change only after a warning.</p>
+  </div>
+  <a href="img/quests.png"><img class="shot" loading="lazy" src="img/quests.png" width="1544" height="1121" alt="Quests tab"></a>
+</section>
+
+<section class="row">
+  <div>
+    <h2>Items</h2>
+    <p>Move items with drag and drop between the equipment, inventory, belt, cube, stash, mercenary and PlugY stash pages (.d2x, .sss).</p>
+    <ul>
+      <li>Create unique, set, runeword, magic, rare and crafted items from the exact 1.14d tables.</li>
+      <li>Type a seed or reroll: d2rs builds the item again the way the game rolls it.</li>
+      <li>Change, add or remove single properties, sockets and the ethereal flag.</li>
+      <li>A "Legit" badge shows if the game can roll the item.</li>
+    </ul>
+  </div>
+  <a href="img/items.png"><img class="shot" loading="lazy" src="img/items.png" width="1544" height="1121" alt="Items tab"></a>
+</section>
+
+<section class="row">
+  <div>
+    <h2>Map of a whole act</h2>
+    <p>d2rs builds the levels from the map seed of your character, or from a seed that you type. It is a pure Rust copy of the 1.14d level generator, and the game does not have to run.</p>
+    <p>Pick the difficulty and the act. Labels show the name of each level.</p>
+  </div>
+  <a href="img/map-act.png"><img class="shot" loading="lazy" src="img/map-act.png" width="1544" height="1121" alt="Map tab with a whole act and level labels"></a>
+</section>
+
+<section class="row">
+  <div>
+    <h2>Map of one level</h2>
+    <p>See one level as a top-down collision map or as a game-style isometric picture. Markers show waypoints, warps and level edges.</p>
+    <p>Export one level or every level as PNG and JSON.</p>
+  </div>
+  <a href="img/map-docks.png"><img class="shot" loading="lazy" src="img/map-docks.png" width="1544" height="1121" alt="Map tab with one level and a waypoint marker"></a>
+</section>
+
+<h3>d2rs keeps your save file safe</h3>
+<ul class="safe">
+  <li><b>Check before edit</b>d2rs encodes the file again and compares each byte with the original.</li>
+  <li><b>Game rules</b>d2rs validates each write against the load rules of the game.</li>
+  <li><b>Backups</b>The desktop app backs up the old files before a write.</li>
+  <li><b>Atomic write</b>d2rs writes a temporary file, renames it in one step, and reads it back.</li>
+  <li><b>No write while you play</b>d2rs refuses to write while the game runs.</li>
 </ul>
 
-<h2>Web version vs Windows app</h2>
+<h3>Web version and Windows app</h3>
 <table>
   <tr><th>Web version</th><th>Windows app</th></tr>
   <tr>
@@ -59,8 +141,8 @@ footer { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid var(--line
   </tr>
 </table>
 
-<h2>Other systems</h2>
-<p>Pick your own game folder (its MPQ files) in d2rs for item names, item creation, item pictures and the map. Build from source: <code>cargo install --git https://github.com/kkuzar/d2rs --locked d2rs</code>. See the <a href="https://github.com/kkuzar/d2rs#readme">README</a> for details.</p>
+<h3>Your game folder and other systems</h3>
+<p>Pick your own game folder (its MPQ files) in d2rs for item names, item creation, item pictures and the map. The pictures on this page come from the game folder of the user. Build from source on any system: <code>cargo install --git https://github.com/kkuzar/d2rs --locked d2rs</code>. See the <a href="https://github.com/kkuzar/d2rs#readme">README</a> for details.</p>
 
 <footer>
   <p>Apache-2.0. <a href="https://github.com/kkuzar/d2rs/tree/main/licenses">Credits and licenses</a>.</p>
